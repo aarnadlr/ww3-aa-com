@@ -110,10 +110,10 @@ gulp.task('watch', function() {
 
 
     //TELL GULP TO WATCH THE STYLES FOLDER for any CSS file changes
-      // watch('./app/assets/styles/**/*.css', function() {
-      //   //EVERY TIME WE SAVE A CHANGE IN ANY STYLES FILES, run this code:
-      //   gulp.start('cssInject');
-      // });
+      watch('./app/assets/styles/**/*.css', function() {
+        //EVERY TIME WE SAVE A CHANGE IN ANY STYLES FILES, run this code:
+        gulp.start('cssInject');
+      });
 
       // watch('./app/assets/scripts/**/*.js', function(){
       //   gulp.start('scriptsRefresh');

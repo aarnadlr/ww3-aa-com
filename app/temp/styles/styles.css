@@ -1,24 +1,106 @@
-html, body{
-  font-family: 'Inconsolata',monospace;
+/*CSS RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  /*font-size: 100%;*/
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-weight: normal;
+}
+html, body{
+  font-family: 'Inconsolata', monospace;
   background-color: #061633;
-  margin: 40px;
+  margin: 20px;
 }
 h1 {
-  font-weight: normal;
-  /*font-size: 2rem;*/
-  /*color:pink ;*/
-}
-h2 {
-  font-weight: normal;
-  /*font-size: 2rem;*/
-  /*color:#1258a2;*/
-}
-.color1 {
   color: #1164ff;
   font-size: 2rem;
 }
-.color2 {
-  color: #00e9ff;
+.parens {
+  color: cyan;
   font-size: 1.7rem;
 }
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.card-div {
+
+}
+.card-div:nth-child(even) {
+  margin-left: 25px;
+}
+/*.card-text:nth-child(even) {
+  margin-left: 25px;
+}*/
+.card-img {
+  width:400px;
+  height: 200px;
+  margin-top: 25px;
+  background-color: lightgray;
+}
+.card-text {
+  width:400px;
+  height: 200px;
+  background-color: white;
+}
+@-ms-viewport{
+  width: device-width;
+}
+/*IMPORTANT TO GET THE FULLSCREEN IMAGE TO TOUCH THE BOTTOM!!*/
+/*html {
+  height: 100%;
+}
+
+body{
+    min-height: 100%;
+}*/
+/*====================*/
+/*       MIXINS       */
+/*====================*/
+/* MOBILE Devices, Phones -- 767 PIXELS and SMALLER */
+@define-mixin mobile  {
+    @media only screen and (max-width : 767px) {
+
+    }
+}
+/* STANDARD Devices, Tablets -- 768 PIXELS and LARGER */
+@define-mixin standard  {
+    @media only screen and (min-width : 768px) { 
+
+    }
+}
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+/*==========  Mobile First Method  ==========*/
+/* CUSTOM, iPhone Retina */
+/*@media only screen and (min-width : 320px) {
+    }*/
+/* EXTRA SMALL Devices, Phones */
+/*@media only screen and (min-width : 480px) {
+    }*/
+/* EXTRA SMALL Devices, Phones -- 767 PIXELS and SMALLER */
+@media only screen and (max-width : 767px) {
+
+    }
+/* SMALL Devices, Tablets -- 768 PIXELS and LARGER */
+@media only screen and (min-width : 768px) { 
+
+    }
+/* MEDIUM Devices, Desktops -- 992 PIXELS and LARGER */
+/*@media only screen and (min-width : 992px) {*/
+/*}*/
+/* LARGE Devices, Wide Screens -- 1200 PIXELS and LARGER */
+/*@media only screen and (min-width : 1200px) {*/
+/*}*/

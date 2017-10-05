@@ -4,7 +4,7 @@
   padding: 0;
   border: 0;
   outline: 0;
-  font-size: 100%;
+  /*font-size: 100%;*/
   vertical-align: baseline;
   background: transparent;
   box-sizing: border-box;
@@ -12,38 +12,66 @@
 }
 
 
-
 $pina: pink;
 $moon: yellow;
+$dark: #061633;
+$roy: #1164ff;
+
+$inc: 'Inconsolata', monospace;
+$rob: 'Roboto', sans-serif;
 
 html, body{
-  font-family: 'Inconsolata',monospace;
-  font-weight: normal;
-  background-color: #061633;
-  margin: 40px;
+  font-family: $inc;
+  background-color: $dark;
+  margin: 20px;
 }
 
 h1 {
-  font-weight: normal;
-  /*font-size: 2rem;*/
-  /*color:pink ;*/
-}
-
-h2 {
-  font-weight: normal;
-  /*font-size: 2rem;*/
-  /*color:#1258a2;*/
-}
-
-.color1 {
-  color: #1164ff;
+  color: $roy;
   font-size: 2rem;
 }
 
-.color2 {
-  color: #00e9ff;
+.parens {
+  color: cyan;
   font-size: 1.7rem;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-div {
+
+}
+
+.card-div:nth-child(even) {
+  margin-right: 0px;
+}
+
+/*.card-text:nth-child(even) {
+  margin-left: 25px;
+}*/
+
+
+.card-img {
+  width:400px;
+  height: 200px;
+  margin-top: 25px;
+  background-color: lightgray;
+}
+.card-text {
+  width:400px;
+  height: 200px;
+  background-color: white;
+}
+
+
+
+
+
+
 
 
 
@@ -73,7 +101,7 @@ body{
     }
 }
 
-/* REGULAR Devices, Tablets -- 768 PIXELS and LARGER */
+/* STANDARD Devices, Tablets -- 768 PIXELS and LARGER */
 @define-mixin standard  {
     @media only screen and (min-width : 768px) { 
 
@@ -97,10 +125,21 @@ body{
     /*@media only screen and (min-width : 480px) {
     }*/
 
+CUSTOM BREAKPOINT: 
+    @media only screen and (max-width : 905px) {
+        .card-div:nth-child(even) {
+          margin-right: 0px;
+        }
+    }
+
+
     /* EXTRA SMALL Devices, Phones -- 767 PIXELS and SMALLER */
     @media only screen and (max-width : 767px) {
-
+       
     }
+
+
+
 
     /* SMALL Devices, Tablets -- 768 PIXELS and LARGER */
     @media only screen and (min-width : 768px) { 
@@ -110,9 +149,9 @@ body{
     /* MEDIUM Devices, Desktops -- 992 PIXELS and LARGER */
     /*@media only screen and (min-width : 992px) {*/
 
-    }
+    /*}*/
 
     /* LARGE Devices, Wide Screens -- 1200 PIXELS and LARGER */
     /*@media only screen and (min-width : 1200px) {*/
 
-    }
+    /*}*/
