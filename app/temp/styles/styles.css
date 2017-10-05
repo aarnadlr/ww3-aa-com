@@ -1,0 +1,24 @@
+html, body{
+  font-family: 'Inconsolata',monospace;
+  font-weight: normal;
+  background-color: #061633;
+  margin: 40px;
+}
+h1 {
+  font-weight: normal;
+  /*font-size: 2rem;*/
+  /*color:pink ;*/
+}
+h2 {
+  font-weight: normal;
+  /*font-size: 2rem;*/
+  /*color:#1258a2;*/
+}
+.color1 {
+  color: #1164ff;
+  font-size: 2rem;
+}
+.color2 {
+  color: #00e9ff;
+  font-size: 1.7rem;
+}

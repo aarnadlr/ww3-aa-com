@@ -1,0 +1,29 @@
+{
+  "name": "hcjjf-nogu",
+  "version": "1.0.0",
+  "description": "Boilerplate with gulp installed",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "Aaron Adler",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.3",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-usemin": "^0.3.28",
+    "gulp-watch": "^4.3.11",
+    "postcss-import": "^10.0.0",
+    "postcss-nested": "^2.1.2",
+    "postcss-simple-vars": "^4.1.0"
+  },
+  "dependencies": {
+    "del": "^3.0.0"
+  }
+}
