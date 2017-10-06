@@ -25,28 +25,47 @@ h1 {
   font-size: 1.7rem;
 }
 .container {
+
   display: -webkit-box;
+
   display: -ms-flexbox;
+
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /*justify-content: space-evenly;*/
+  /*flex: 0 0 230px;*/
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-.card-div {
 
 }
-.card-div:nth-child(even) {
-  margin-left: 25px;
+.container--left {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    /*margin-left: 25px;*/
+  }
+.col {
+  /*width:20px;*/
+  /*flex: 0 0 20px;*/
+  /*background-color: yellow;*/
 }
-/*.card-text:nth-child(even) {
-  margin-left: 25px;
-}*/
+.card-div {
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  /*flex: 0 0 230px;*/
+
+}
+.card-div:nth-child(odd) {
+  /*margin-right: 25px;*/
+}
 .card-img {
   width:400px;
   height: 200px;
-  margin-top: 25px;
+  
   background-color: lightgray;
 }
 .card-text {
@@ -90,9 +109,21 @@ body{
 /* EXTRA SMALL Devices, Phones */
 /*@media only screen and (min-width : 480px) {
     }*/
+/*CUSTOM BREAKPOINT: */
+@media only screen and (max-width : 879px) {
+       /* .card-div:nth-child(odd) {
+          margin-right: 0px;
+        }*/
+        .col {
+          /*width:25px;*/
+          /*flex: 0 0 20px;*/
+          /*background-color: yellow;*/
+          display: none;
+        }
+    }
 /* EXTRA SMALL Devices, Phones -- 767 PIXELS and SMALLER */
 @media only screen and (max-width : 767px) {
-
+       
     }
 /* SMALL Devices, Tablets -- 768 PIXELS and LARGER */
 @media only screen and (min-width : 768px) { 
