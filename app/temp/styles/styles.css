@@ -49,6 +49,9 @@ h1 {
   top:6px;
   right:5px;
 }
+#contact {
+  padding: 10px 0;
+}
 /*===================================================*/
 /* MAIN / CONTENT */
 /*===================================================*/
@@ -79,15 +82,27 @@ h1 {
 .container--parag p {
     /*columns: 2;*/
     }
+.container--contact {
+    max-width: 300px;
+
+    /*padding: 0 0px;*/
+    margin:auto;
+
+  }
 .container--left {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     /*margin-left: 25px;*/
   }
-.container--marginbot {
+.container--marginbot40 {
+  margin-bottom: 40px;
+  }
+.container--marginbot60 {
+  margin-bottom: 60px;
+  }
+.container--marginbot80 {
   margin-bottom: 80px;
-    
   }
 .container--center {
     /*text-align: center;*/
@@ -241,22 +256,20 @@ body{
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  -webkit-box-shadow: 0 0 1px transparent;
-          box-shadow: 0 0 1px transparent;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow, transform;
-  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
-  transition-property: -webkit-box-shadow, -webkit-transform;
-  transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+  /*box-shadow: 0 0 1px transparent;*/
+  -webkit-transition-duration: 0.9s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 .hvr-grow-shadow-3:hover, .hvr-grow-shadow-3:focus, .hvr-grow-shadow-3:active {
-  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.035);
-  transform: scale(1.035);
+  /*box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);*/
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
+.hvr-grow-shadow-3:hover p, .hvr-grow-shadow-3:focus p, .hvr-grow-shadow-3:active p {
+    color: cyan;
+  }
 a:link    {
   /* Applies to all unvisited links */
   text-decoration:  none;
