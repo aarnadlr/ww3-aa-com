@@ -16,7 +16,8 @@
 /*===================================================*/
 html, body{
   font-family: 'Inconsolata', monospace;
-  background-color: #061633;
+   background-color: #061633; 
+  /*background-color: purple;*/
   margin: 10px;
 }
 /*===================================================*/
@@ -37,10 +38,16 @@ h1 {
   color: cyan;
   font-size: 1.7rem;
 }
+/*SOCIAL ICONS AT TOP*/
 .icon {
   width:20px;
   height: 20px;
   margin: 0 20px;
+}
+.fa-envelope-o {
+  position: relative;
+  top:6px;
+  right:5px;
 }
 /*===================================================*/
 /* MAIN / CONTENT */
@@ -82,6 +89,10 @@ h1 {
   margin-bottom: 80px;
     
   }
+.container--center {
+    /*text-align: center;*/
+    /*margin: 0 auto;*/
+  }
 .card-div {
   margin-top: 25px;
   margin-left: 10px;
@@ -107,7 +118,7 @@ h1 {
     width:400px;
     /*height: 200px;*/
     background-color: white;
-    padding: 30px;
+    padding: 40px;
     height: auto;
 }
 .card-bottom .text--title {
@@ -132,7 +143,7 @@ h1 {
 }
 .tag-container .tag {
     margin-right: 5px;
-    padding: 5px 13px;
+    padding: 3px 10px;
     border-radius: 4px;
     background-color: red;
   }
@@ -144,6 +155,13 @@ h1 {
   }
 .tag-container .tag--yellow {
     background-color: gold;
+  }
+.tag-container .tag--purple {
+    background-color: #A100FF;
+    /*background-color: gold;*/
+  }
+.tag-container .tag--blue {
+    background-color: blue;
   }
 .tag-container p {
       font-size: .8rem;
@@ -218,6 +236,31 @@ body{
   -webkit-transform: scale(1.035);
   transform: scale(1.035);
 }
+.hvr-grow-shadow-3 {
+  /*display: inline-block;*/
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+          box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+}
+.hvr-grow-shadow-3:hover, .hvr-grow-shadow-3:focus, .hvr-grow-shadow-3:active {
+  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.035);
+  transform: scale(1.035);
+}
+a:link    {
+  /* Applies to all unvisited links */
+  text-decoration:  none;
+  }
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
@@ -233,12 +276,7 @@ body{
        /* .card-div:nth-child(odd) {
           margin-right: 0px;
         }*/
-        .col {
-          /*width:25px;*/
-          /*flex: 0 0 20px;*/
-          /*background-color: yellow;*/
-          display: none;
-        }
+
     }
 /* EXTRA SMALL Devices, Phones -- 767 PIXELS and SMALLER */
 @media only screen and (max-width : 767px) {

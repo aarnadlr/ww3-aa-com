@@ -1,3 +1,30 @@
+// var venobox       = require("venobox");
+
+$(document).ready(function(){
+  $('.venobox').venobox({
+
+    spinner: 'rotating-plane',
+    titleColor: '#1164ff',
+    overlayColor: 'rgba(0, 0, 50, 0.8)',
+    spinColor: '#1164ff'
+    // titleattr: 'data-title',    // default: 'title'
+    // titlePosition: 'top',
+    // titleColor: 'white'
+    // border: '10px'             // default: '0'
+    // spinColor: 'blue'
+  });
+});
+
+  // $('.venobox_custom').venobox({
+  //         framewidth: '400px',        // default: ''
+  //         frameheight: '300px',       // default: ''
+  //         bgcolor: '#5dff5e',         // default: '#fff'
+  //         numeratio: true,            // default: false
+  //         infinigall: true,            // default: false
+  //         spinner: 'rotating-plane'
+  //     });
+
+
 // alert("cc");
 // console.log("yes");
 
