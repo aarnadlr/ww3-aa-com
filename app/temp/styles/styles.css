@@ -11,10 +11,23 @@
           box-sizing: border-box;
   font-weight: normal;
 }
+/*===================================================*/
+/*GLOBALS*/
+/*===================================================*/
 html, body{
   font-family: 'Inconsolata', monospace;
   background-color: #061633;
-  margin: 20px;
+  margin: 10px;
+}
+/*===================================================*/
+/*HEADER AREA*/
+/*===================================================*/
+.profile-pic {
+  margin-top: 70px;
+  width: 70px;
+  height: 70px;
+  border-radius: 300px;
+  margin-bottom: 30px;
 }
 h1 {
   color: #1164ff;
@@ -24,39 +37,59 @@ h1 {
   color: cyan;
   font-size: 1.7rem;
 }
+.icon {
+  width:20px;
+  height: 20px;
+  margin: 0 20px;
+}
+/*===================================================*/
+/* MAIN / CONTENT */
+/*===================================================*/
 .container {
-
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /*justify-content: space-evenly;*/
-  /*flex: 0 0 230px;*/
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 
 }
+.container p {
+      line-height: 1.7rem;
+      font-size: 1rem;
+      color: lightgray;
+    }
+.container--parag {
+    position: relative;
+    /*left: 8px;*/
+    max-width: 440px;
+
+    /*padding: 0 0px;*/
+    margin:auto;
+  }
+.container--parag p {
+    /*columns: 2;*/
+    }
 .container--left {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     /*margin-left: 25px;*/
   }
-.col {
-  /*width:20px;*/
-  /*flex: 0 0 20px;*/
-  /*background-color: yellow;*/
-}
+.container--marginbot {
+  margin-bottom: 80px;
+    
+  }
 .card-div {
   margin-top: 25px;
   margin-left: 10px;
   margin-right: 10px;
 
   /*flex: 0 0 230px;*/
+  height:auto;
+  /*border: red solid 5px;*/
 
 }
 .card-div:nth-child(odd) {
@@ -65,14 +98,57 @@ h1 {
 .card-img {
   width:400px;
   height: 200px;
-  
   background-color: lightgray;
 }
-.card-text {
-  width:400px;
-  height: 200px;
-  background-color: white;
+.card-img img {
+    width:400px;
+  }
+.card-bottom {
+    width:400px;
+    /*height: 200px;*/
+    background-color: white;
+    padding: 30px;
+    height: auto;
 }
+.card-bottom .text--title {
+      font-size: 1.4rem;
+      color: blue;
+      padding-bottom: 20px;
+    }
+.card-bottom .copy {
+      margin-top: 8px;
+    }
+.card-bottom p {
+      line-height: 1.5rem;
+      font-size: 1rem;
+      color: gray;
+    }
+.tag-container {
+  margin-top: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+}
+.tag-container .tag {
+    margin-right: 5px;
+    padding: 5px 13px;
+    border-radius: 4px;
+    background-color: red;
+  }
+.tag-container .tag--red {
+    background-color: red;
+  }
+.tag-container .tag--orange {
+    background-color: orange;
+  }
+.tag-container .tag--yellow {
+    background-color: gold;
+  }
+.tag-container p {
+      font-size: .8rem;
+      color:white;
+    }
 @-ms-viewport{
   width: device-width;
 }
@@ -98,6 +174,49 @@ body{
     @media only screen and (min-width : 768px) { 
 
     }
+}
+/* HOVER.CSS: Grow Shadow*/
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+          box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+}
+.hvr-grow-shadow-2 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+          box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+}
+.hvr-grow-shadow-2:hover, .hvr-grow-shadow-2:focus, .hvr-grow-shadow-2:active {
+  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.035);
+  transform: scale(1.035);
 }
 /*==================================================
 =            Bootstrap 3 Media Queries             =

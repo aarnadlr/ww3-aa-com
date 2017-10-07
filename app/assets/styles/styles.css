@@ -18,11 +18,25 @@ $roy: #1164ff;
 
 $inc: 'Inconsolata', monospace;
 $rob: 'Roboto', sans-serif;
-
+/*===================================================*/
+/*GLOBALS*/
+/*===================================================*/
 html, body{
   font-family: $inc;
   background-color: $dark;
-  margin: 20px;
+  margin: 10px;
+}
+
+/*===================================================*/
+/*HEADER AREA*/
+/*===================================================*/
+
+.profile-pic {
+  margin-top: 70px;
+  width: 70px;
+  height: 70px;
+  border-radius: 300px;
+  margin-bottom: 30px;
 }
 
 h1 {
@@ -35,26 +49,53 @@ h1 {
   font-size: 1.7rem;
 }
 
-.container {
 
+.icon {
+  width:20px;
+  height: 20px;
+  margin: 0 20px;
+}
+
+/*===================================================*/
+/* MAIN / CONTENT */
+/*===================================================*/
+
+.container {
   display: flex;
   justify-content: center;
-  /*justify-content: space-evenly;*/
-  /*flex: 0 0 230px;*/
   flex-wrap: wrap;
+
+  p {
+      line-height: 1.7rem;
+      font-size: 1rem;
+      color: lightgray;
+    }
+  &--parag {
+    position: relative;
+    /*left: 8px;*/
+    max-width: 440px;
+
+    /*padding: 0 0px;*/
+    margin:auto;
+    p {
+    /*columns: 2;*/
+    }
+  }
 
   &--left {
     justify-content: flex-start;
     /*margin-left: 25px;*/
   }
 
+  &--marginbot {
+  margin-bottom: 80px;
+    
+  }
+
 }
 
-.col {
-  /*width:20px;*/
-  /*flex: 0 0 20px;*/
-  /*background-color: yellow;*/
-}
+
+
 
 .card-div {
   margin-top: 25px;
@@ -62,6 +103,8 @@ h1 {
   margin-right: 10px;
 
   /*flex: 0 0 230px;*/
+  height:auto;
+  /*border: red solid 5px;*/
 
 }
 
@@ -73,15 +116,67 @@ h1 {
 .card-img {
   width:400px;
   height: 200px;
-  
   background-color: lightgray;
-}
-.card-text {
-  width:400px;
-  height: 200px;
-  background-color: white;
+  img {
+    width:400px;
+  }
 }
 
+.card-bottom {
+    width:400px;
+    /*height: 200px;*/
+    background-color: white;
+    padding: 30px;
+    height: auto;
+
+    .text--title {
+      font-size: 1.4rem;
+      color: blue;
+      padding-bottom: 20px;
+    }
+
+    .copy {
+      margin-top: 8px;
+    }
+
+    p {
+      line-height: 1.5rem;
+      font-size: 1rem;
+      color: gray;
+    }
+}
+
+
+.tag-container {
+  margin-top: 13px;
+  display: flex;
+
+  .tag {
+    margin-right: 5px;
+    padding: 5px 13px;
+    border-radius: 4px;
+    background-color: red;
+  }
+
+  .tag--red {
+    background-color: red;
+  }
+
+  .tag--orange {
+    background-color: orange;
+  }
+
+  .tag--yellow {
+    background-color: gold;
+  }
+
+
+  p {
+      font-size: .8rem;
+      color:white;
+    }
+
+}
 
 
 
@@ -123,6 +218,40 @@ body{
     }
 }
 
+/* HOVER.CSS: Grow Shadow*/
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+.hvr-grow-shadow-2 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow-2:hover, .hvr-grow-shadow-2:focus, .hvr-grow-shadow-2:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.035);
+  transform: scale(1.035);
+}
 
 
 
