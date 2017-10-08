@@ -95,18 +95,20 @@ h1 {
             justify-content: flex-start;
     /*margin-left: 25px;*/
   }
+.container--marginbot30 {
+    margin-bottom: 30px;
+  }
 .container--marginbot40 {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 .container--marginbot60 {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
   }
 .container--marginbot80 {
-  margin-bottom: 80px;
+    margin-bottom: 80px;
   }
-.container--center {
-    /*text-align: center;*/
-    /*margin: 0 auto;*/
+.container--martop50 {
+    margin-top: 100px;
   }
 .card-div {
   margin-top: 25px;
@@ -166,10 +168,10 @@ h1 {
     background-color: red;
   }
 .tag-container .tag--orange {
-    background-color: orange;
+    background-color: #FF9500;
   }
 .tag-container .tag--yellow {
-    background-color: gold;
+    background-color: #FFC800;
   }
 .tag-container .tag--purple {
     background-color: #A100FF;
@@ -182,6 +184,10 @@ h1 {
       font-size: .8rem;
       color:white;
     }
+#thankyou p{
+  font-size: 27px;
+  margin-bottom: 25px;
+}
 @-ms-viewport{
   width: device-width;
 }
@@ -258,7 +264,7 @@ body{
   transform: perspective(1px) translateZ(0);
   /*box-shadow: 0 0 1px transparent;*/
   -webkit-transition-duration: 0.9s;
-  transition-duration: 0.5s;
+  transition-duration: 0.9s;
   -webkit-transition-property: all;
   transition-property: all;
 }

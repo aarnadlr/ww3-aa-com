@@ -112,22 +112,24 @@ h1 {
     /*margin-left: 25px;*/
   }
 
+  &--marginbot30 {
+    margin-bottom: 30px;
+  }
 
   &--marginbot40 {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   &--marginbot60 {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
   }
 
   &--marginbot80 {
-  margin-bottom: 80px;
+    margin-bottom: 80px;
   }
 
-  &--center {
-    /*text-align: center;*/
-    /*margin: 0 auto;*/
+  &--martop50 {
+    margin-top: 100px;
   }
 
 }
@@ -202,11 +204,11 @@ h1 {
   }
 
   .tag--orange {
-    background-color: orange;
+    background-color: #FF9500;
   }
 
   .tag--yellow {
-    background-color: gold;
+    background-color: #FFC800;
   }
   .tag--purple {
     background-color: #A100FF;
@@ -222,6 +224,12 @@ h1 {
       color:white;
     }
 
+}
+
+
+#thankyou p{
+  font-size: 27px;
+  margin-bottom: 25px;
 }
 
 
@@ -306,7 +314,7 @@ body{
   transform: perspective(1px) translateZ(0);
   /*box-shadow: 0 0 1px transparent;*/
   -webkit-transition-duration: 0.9s;
-  transition-duration: 0.5s;
+  transition-duration: 0.9s;
   -webkit-transition-property: all;
   transition-property: all;
 }
