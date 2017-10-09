@@ -66,11 +66,13 @@ h1 {
       flex-wrap: wrap;
 
 }
+/*align-content: center;*/
 .container p {
       line-height: 1.7rem;
       font-size: 1rem;
       color: lightgray;
     }
+/*align-items: stretch;*/
 .container--parag {
     position: relative;
     /*left: 8px;*/
@@ -138,11 +140,6 @@ h1 {
     padding: 40px;
     height: auto;
 }
-.card-bottom .text--title {
-      font-size: 1.4rem;
-      color: blue;
-      padding-bottom: 20px;
-    }
 .card-bottom .copy {
       margin-top: 8px;
     }
@@ -150,6 +147,15 @@ h1 {
       line-height: 1.5rem;
       font-size: 1rem;
       color: gray;
+    }
+.text__title {
+      font-size: 1.4rem;
+      color: blue;
+      padding-bottom: 20px;
+    }
+.text--smaller {
+      font-size: 1.1rem;
+      /*margin-top: 35px;*/
     }
 .tag-container {
   margin-top: 13px;
@@ -160,7 +166,7 @@ h1 {
 }
 .tag-container .tag {
     margin-right: 5px;
-    padding: 3px 10px;
+    padding: 1px 10px;
     border-radius: 4px;
     background-color: red;
   }
@@ -180,10 +186,16 @@ h1 {
 .tag-container .tag--blue {
     background-color: blue;
   }
+.tag-container .tag--bluegreen {
+    background-color: #00D4AD;
+  }
 .tag-container p {
       font-size: .8rem;
       color:white;
     }
+.display-none {
+  display: none;
+}
 #thankyou p{
   font-size: 27px;
   margin-bottom: 25px;
@@ -233,8 +245,8 @@ body{
 .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
   -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.4);
-  transform: scale(1.4);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 .hvr-grow-shadow-2 {
   display: inline-block;

@@ -77,6 +77,8 @@ h1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  /*align-items: stretch;*/
+  /*align-content: center;*/
 
   p {
       line-height: 1.7rem;
@@ -170,11 +172,7 @@ h1 {
     padding: 40px;
     height: auto;
 
-    .text--title {
-      font-size: 1.4rem;
-      color: blue;
-      padding-bottom: 20px;
-    }
+
 
     .copy {
       margin-top: 8px;
@@ -187,6 +185,20 @@ h1 {
     }
 }
 
+.text {
+    
+    &__title {
+      font-size: 1.4rem;
+      color: blue;
+      padding-bottom: 20px;
+    }
+
+    &--smaller {
+      font-size: 1.1rem;
+      /*margin-top: 35px;*/
+    }
+}
+
 
 .tag-container {
   margin-top: 13px;
@@ -194,7 +206,7 @@ h1 {
 
   .tag {
     margin-right: 5px;
-    padding: 3px 10px;
+    padding: 1px 10px;
     border-radius: 4px;
     background-color: red;
   }
@@ -218,6 +230,10 @@ h1 {
     background-color: blue;
   }
 
+  .tag--bluegreen {
+    background-color: #00D4AD;
+  }
+
 
   p {
       font-size: .8rem;
@@ -226,6 +242,10 @@ h1 {
 
 }
 
+
+.display-none {
+  display: none;
+}
 
 #thankyou p{
   font-size: 27px;
@@ -286,8 +306,8 @@ body{
 }
 .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.4);
-  transform: scale(1.4);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .hvr-grow-shadow-2 {

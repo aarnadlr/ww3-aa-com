@@ -20,12 +20,14 @@ button[data-balloon] {
     font-weight: normal !important;
     font-style: normal !important;
     text-shadow: none !important;
-    font-size: 12px !important;
+
+    /*AA CUSTOM STYLES*/
+    font-size: .7rem !important;
     background: rgba(0, 0, 255, 0.5);
     border-radius: 4px;
     color: #fff;
     content: attr(data-balloon);
-    padding: .5em 1em;
+    padding: .5em .8em;
     position: absolute;
     white-space: nowrap;
     z-index: 10; }
