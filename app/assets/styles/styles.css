@@ -330,7 +330,35 @@ body{
 a:link    {
   /* Applies to all unvisited links */
   text-decoration:  none;
-  } 
+  }
+
+/*NOT BEING USED*/
+.aa-tooltip {
+    background: blue;
+    font-size:10px;
+    height:50px;
+    width:100px;
+    padding:10px;
+    color:#fff; 
+    z-index: 99;
+    border: none !important;
+    border-radius: 0;
+  /* for IE */
+  filter:alpha(opacity=80);
+  /* CSS3 standard */
+  opacity:0.8;
+}
+
+
+/*BALLOON (TOOLTIP) CUSTOM STYLES*/
+
+  [data-balloon]:after {
+    font-family: $inc !important;
+    font-size: 12px !important;
+    background: rgba(0, 0, 255, 0.5);
+    border-radius: 4px;
+    color: #fff;
+
 
 
 /*==================================================

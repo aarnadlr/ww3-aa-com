@@ -280,6 +280,22 @@ a:link    {
   /* Applies to all unvisited links */
   text-decoration:  none;
   }
+/*NOT BEING USED*/
+.aa-tooltip {
+    background: blue;
+    font-size:10px;
+    height:50px;
+    width:100px;
+    padding:10px;
+    color:#fff; 
+    z-index: 99;
+    border: none !important;
+    border-radius: 0;
+  /* for IE */
+  filter:alpha(opacity=80);
+  /* CSS3 standard */
+  opacity:0.8;
+}
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/

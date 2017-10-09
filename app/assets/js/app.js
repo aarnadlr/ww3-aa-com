@@ -15,6 +15,14 @@ $(document).ready(function(){
   });
 });
 
+// JQUERY-UI MOUSE-TRACKING TOOLTIP
+// $('.tooltip').tooltip({
+//   track: true,
+//   tooltipClass: "aa-tooltip"
+// });
+
+
+
   // $('.venobox_custom').venobox({
   //         framewidth: '400px',        // default: ''
   //         frameheight: '300px',       // default: ''

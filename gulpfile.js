@@ -158,6 +158,7 @@ gulp.task('cssInject', ['styles'] , function() {
 
 
 //FINISHING PROJECT: DIST and BUILD
+// COPY ICON FOLDER IMAGES INTO ICON FOLDER
 gulp.task('optimizeImages',['deleteDistFolder'], function() {
   return gulp.src(['./app/assets/images/**/*', '!'])
     .pipe(imagemin({
@@ -167,6 +168,19 @@ gulp.task('optimizeImages',['deleteDistFolder'], function() {
     }))
     .pipe(gulp.dest("./dist/assets/images"));
 });
+
+// COPY ICON FOLDER IMAGES INTO ICON FOLDER
+// gulp.task('optimizeIcons', function() {
+//   return gulp.src(['./app/assets/images/icons/*', '!'])
+//     // .pipe(imagemin({
+//     //   progressive: true,
+//     //   interlaced: true,
+//     //   multipass: true
+//     // }))
+//     .pipe(gulp.dest("./dist/assets/images/icons"));
+// });
+
+
 
 // COPY CSS AND JS FILES OVER TO DIST FILE
 gulp.task('usemin', ['deleteDistFolder'], function() {
