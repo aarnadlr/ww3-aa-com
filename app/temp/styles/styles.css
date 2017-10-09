@@ -16,7 +16,7 @@
 /*===================================================*/
 html, body{
   font-family: 'Inconsolata', monospace;
-   background-color: #061633; 
+  background-color: #061633; 
   /*background-color: purple;*/
   margin: 10px;
 }
@@ -162,14 +162,17 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
 }
 .tag-container .tag {
     margin-right: 5px;
-    padding: 1px 10px;
+    padding: 0px 10px;
     border-radius: 4px;
     background-color: red;
   }
+.tag-container p {
+      font-size: .7rem;
+      color:white;
+    }
 .tag-container .tag--red {
     background-color: red;
   }
@@ -189,10 +192,6 @@ h1 {
 .tag-container .tag--bluegreen {
     background-color: #00D4AD;
   }
-.tag-container p {
-      font-size: .8rem;
-      color:white;
-    }
 .display-none {
   display: none;
 }

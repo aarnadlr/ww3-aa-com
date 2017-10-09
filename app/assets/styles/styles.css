@@ -24,7 +24,7 @@ $rob: 'Roboto', sans-serif;
 /*===================================================*/
 html, body{
   font-family: $inc;
-   background-color: $dark; 
+  background-color: $dark; 
   /*background-color: purple;*/
   margin: 10px;
 }
@@ -206,10 +206,16 @@ h1 {
 
   .tag {
     margin-right: 5px;
-    padding: 1px 10px;
+    padding: 0px 10px;
     border-radius: 4px;
     background-color: red;
   }
+
+  p {
+      font-size: .7rem;
+      color:white;
+    }
+
 
   .tag--red {
     background-color: red;
@@ -233,13 +239,6 @@ h1 {
   .tag--bluegreen {
     background-color: #00D4AD;
   }
-
-
-  p {
-      font-size: .8rem;
-      color:white;
-    }
-
 }
 
 

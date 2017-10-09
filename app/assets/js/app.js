@@ -16,6 +16,21 @@ $(document).ready(function(){
     // border: '10px'             // default: '0'
     // spinColor: 'blue'
   });
+   $('.venobox-wide').venobox({
+
+    spinner: 'rotating-plane',
+    titleColor: '#1164ff',
+    overlayColor: 'rgba(0, 0, 50, 0.8)',
+    spinColor: '#1164ff',
+    framewidth: '700px',
+    // frameheight: '600px',
+    arrowsColor: 'cyan'
+    // titleattr: 'data-title',    // default: 'title'
+    // titlePosition: 'top',
+    // titleColor: 'white'
+    // border: '10px'             // default: '0'
+    // spinColor: 'blue'
+  });
 });
 
 // JQUERY-UI MOUSE-TRACKING TOOLTIP
