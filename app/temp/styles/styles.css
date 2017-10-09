@@ -281,8 +281,8 @@ body{
 }
 .hvr-grow-shadow-3:hover, .hvr-grow-shadow-3:focus, .hvr-grow-shadow-3:active {
   /*box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);*/
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
 }
 .hvr-grow-shadow-3:hover p, .hvr-grow-shadow-3:focus p, .hvr-grow-shadow-3:active p {
     color: cyan;
