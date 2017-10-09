@@ -4,7 +4,7 @@
   padding: 0;
   border: 0;
   outline: 0;
-  /*font-size: 100%;*/
+  font-size: 100%;
   vertical-align: baseline;
   background: transparent;
   box-sizing: border-box;
@@ -65,7 +65,7 @@ h1 {
   right:5px;
 }
 
-#contact {
+.pad10 {
   padding: 10px 0;
 }
 
@@ -286,8 +286,8 @@ body{
 }
 .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.25);
-  transform: scale(1.25);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
 }
 
 .hvr-grow-shadow-2 {
@@ -320,8 +320,8 @@ body{
 }
 .hvr-grow-shadow-3:hover, .hvr-grow-shadow-3:focus, .hvr-grow-shadow-3:active {
   /*box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);*/
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
   p {
     color: cyan;
   }
@@ -349,15 +349,6 @@ a:link    {
   opacity:0.8;
 }
 
-
-/*BALLOON (TOOLTIP) CUSTOM STYLES*/
-
-  [data-balloon]:after {
-    font-family: $inc !important;
-    font-size: 12px !important;
-    background: rgba(0, 0, 255, 0.5);
-    border-radius: 4px;
-    color: #fff;
 
 
 

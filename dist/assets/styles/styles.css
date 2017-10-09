@@ -4,7 +4,7 @@
   padding: 0;
   border: 0;
   outline: 0;
-  /*font-size: 100%;*/
+  font-size: 100%;
   vertical-align: baseline;
   background: transparent;
   -webkit-box-sizing: border-box;
@@ -49,7 +49,7 @@ h1 {
   top:6px;
   right:5px;
 }
-#contact {
+.pad10 {
   padding: 10px 0;
 }
 /*===================================================*/
@@ -233,8 +233,8 @@ body{
 .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
   -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.25);
-  transform: scale(1.25);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
 }
 .hvr-grow-shadow-2 {
   display: inline-block;
@@ -270,8 +270,8 @@ body{
 }
 .hvr-grow-shadow-3:hover, .hvr-grow-shadow-3:focus, .hvr-grow-shadow-3:active {
   /*box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);*/
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .hvr-grow-shadow-3:hover p, .hvr-grow-shadow-3:focus p, .hvr-grow-shadow-3:active p {
     color: cyan;
