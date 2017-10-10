@@ -179,7 +179,7 @@ h1 {
 .tag-container .tag--orange {
     background-color: #FF9500;
   }
-.tag-container .tag--yellow {
+.tag-container .tag--lightgreen {
     background-color: #8BD961;
   }
 .tag-container .tag--purple {
@@ -191,6 +191,9 @@ h1 {
   }
 .tag-container .tag--bluegreen {
     background-color: #00D4AD;
+  }
+.tag-container .tag--gold {
+    background-color: #FDBE00;
   }
 .display-none {
   display: none;
