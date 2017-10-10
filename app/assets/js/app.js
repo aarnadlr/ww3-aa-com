@@ -3,12 +3,14 @@
 $(document).ready(function(){
   $('.venobox').venobox({
 
-    spinner: 'rotating-plane',
-    titleColor: '#1164ff',
+    // spinner: 'rotating-plane',
+    spinner: '',
+    titleattr: '',
+    titleColor: '',
     overlayColor: 'rgba(0, 0, 50, 0.8)',
     spinColor: '#1164ff',
-    // framewidth: '500px',
-    frameheight: '600px',
+    framewidth: '500px',
+    // frameheight: '500px',
     arrowsColor: 'cyan'
     // titleattr: 'data-title',    // default: 'title'
     // titlePosition: 'top',
@@ -18,8 +20,9 @@ $(document).ready(function(){
   });
    $('.venobox-wide').venobox({
 
-    spinner: 'rotating-plane',
-    titleColor: '#1164ff',
+    spinner: '',
+    titleattr: '',
+    titleColor: '',
     overlayColor: 'rgba(0, 0, 50, 0.8)',
     spinColor: '#1164ff',
     framewidth: '700px',

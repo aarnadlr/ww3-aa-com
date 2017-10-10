@@ -42,7 +42,7 @@ h1 {
 .icon {
   width:20px;
   height: 20px;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 .fa-envelope-o {
   position: relative;
@@ -306,6 +306,11 @@ a:link    {
   filter:alpha(opacity=80);
   /* CSS3 standard */
   opacity:0.8;
+}
+.vbox-close{
+    width: 70px !important;
+    height: 55px !important;
+    font-size: 40px !important;
 }
 /*==================================================
 =            Bootstrap 3 Media Queries             =

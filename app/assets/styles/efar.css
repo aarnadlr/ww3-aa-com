@@ -12,11 +12,8 @@
   font-weight: normal;
 }
 
-$pina: pink;
-$moon: yellow;
 $dark: #061633;
 $roy:  #1164ff;
-
 $inc: 'Inconsolata', monospace;
 $rob: 'Roboto', sans-serif;
 
@@ -44,7 +41,7 @@ html, body{
 
 h1 {
   color: $roy;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
 /*SUBTITLE*/
