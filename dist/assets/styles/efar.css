@@ -42,12 +42,14 @@ html, body{
 
 h1 {
   color: #1164ff;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
 }
+
+/*SUBTITLE*/
 
 h2 {
   color: cyan;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
 }
 
 /*SOCIAL ICONS AT TOP*/
@@ -437,10 +439,10 @@ body{
 }
 
 .hvr-grow-shadow-4:hover, .hvr-grow-shadow-2:focus, .hvr-grow-shadow-2:active {
-  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.035);
-  transform: scale(1.035);
+  /*box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);*/
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+
 }
 
 a:link    {
