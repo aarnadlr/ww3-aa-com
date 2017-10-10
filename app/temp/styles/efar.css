@@ -8,30 +8,28 @@
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-weight: normal;
 }
 
-$pina: pink;
-$moon: yellow;
-$dark: #061633;
-$roy:  #1164ff;
-
-$inc: 'Inconsolata', monospace;
-$rob: 'Roboto', sans-serif;
-
 /*===================================================*/
+
 /*GLOBALS*/
+
 /*===================================================*/
+
 html, body{
-  font-family: $inc;
-  background-color: $dark; 
+  font-family: 'Inconsolata', monospace;
+  background-color: #061633; 
   /*background-color: purple;*/
   margin: 10px;
 }
 
 /*===================================================*/
+
 /*HEADER AREA*/
+
 /*===================================================*/
 
 .book-cover {
@@ -43,7 +41,7 @@ html, body{
 }
 
 h1 {
-  color: $roy;
+  color: #1164ff;
   font-size: 2.4rem;
 }
 
@@ -52,15 +50,13 @@ h2 {
   font-size: 1.2rem;
 }
 
-
-
 /*SOCIAL ICONS AT TOP*/
+
 .icon {
   width:20px;
   height: 20px;
   margin: 0 20px;
 }
-
 
 .fa-envelope-o {
   position: relative;
@@ -73,7 +69,9 @@ h2 {
 }
 
 /*===================================================*/
+
 /* MAIN / CONTENT */
+
 /*===================================================*/
 
 .white-box {
@@ -90,14 +88,16 @@ h2 {
 
 }
 
-
 .amazon {
     display: block;
     margin-top: 40px;
     margin-bottom: 50px;
-    /*padding-bottom: 50px;*/
 
-    .amazon__logo {
+}
+
+/*padding-bottom: 50px;*/
+
+.amazon .amazon__logo {
       width:110px;
       /*margin: 0 auto;*/
       /*text-align: center;*/
@@ -106,43 +106,51 @@ h2 {
       /*bottom: 7px;*/
     }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
 }
 
+/*align-content: center;*/
 
-.container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  display: flex;
-  align-items: center;
-  /*align-items: stretch;*/
-  /*align-content: center;*/
-
-  p {
+.container p {
       line-height: 1.7rem;
       font-size: 1rem;
       color: lightgray;
     }
-  
-  &--rel{
+
+/*align-items: stretch;*/
+
+.container--rel{
     position: relative;
     bottom: 10px;
   }
 
-  &--parag {
+.container--parag {
     position: relative;
     /*left: 8px;*/
     max-width: 440px;
 
     /*padding: 0 0px;*/
     margin:auto;
-    
-    p {
-    /*columns: 2;*/
-    }
   }
 
-  &--contact {
+.container--parag p {
+    /*columns: 2;*/
+    }
+
+.container--contact {
     max-width: 300px;
 
     /*padding: 0 0px;*/
@@ -150,47 +158,42 @@ h2 {
 
   }
 
-
-  &--left {
-    justify-content: flex-start;
+.container--left {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     /*margin-left: 25px;*/
   }
 
-  &--marginbot30 {
+.container--marginbot30 {
     margin-bottom: 30px;
   }
 
-  &--marginbot40 {
+.container--marginbot40 {
     margin-bottom: 40px;
   }
 
-  &--marginbot60 {
+.container--marginbot60 {
     margin-bottom: 60px;
   }
 
-  &--marginbot80 {
+.container--marginbot80 {
     margin-bottom: 80px;
   }
 
-
-  &--martop30 {
+.container--martop30 {
     margin-top: 30px;
   }
 
-
-  &--martop50 {
+.container--martop50 {
     margin-top: 100px;
   }
-
-}
-
 
 /*RETURN BUTTON*/
 
 .return {
   display: inline-block;
   -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   position: relative;
   cursor: pointer;
@@ -198,12 +201,11 @@ h2 {
   padding: 15px 30px;
   border: 2px solid rgba(255, 255, 255, 0.7);
   /*font: normal normal bold 20px/50px Arial, Helvetica, sans-serif;*/
-  font-family: $inc, monospace;
+  font-family: 'Inconsolata', monospace, monospace;
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
   font-weight: normal;
   /*text-transform: uppercase;*/
-  -o-text-overflow: clip;
   text-overflow: clip;
   /*background: none;*/
   margin-bottom: 100px;
@@ -213,11 +215,6 @@ h2 {
   color: white;
   background: rgba(255, 255, 255, 0.1);
 }
-
-
-
-
-
 
 .card-div {
   margin-top: 25px;
@@ -234,13 +231,10 @@ h2 {
   /*margin-right: 25px;*/
 }
 
-
-.spread {
-  
-  img {
+.spread img {
     width:500px;
   }
-}
+
 p.caption {
     /*font-size: 100%;*/
     /*margin: auto;*/
@@ -248,98 +242,85 @@ p.caption {
     font-size: .9rem;
   }
 
-
-
-
-
 .card-bottom {
     width:400px;
     /*height: 200px;*/
     background-color: white;
     padding: 40px;
     height: auto;
+}
 
-
-
-    .copy {
+.card-bottom .copy {
       margin-top: 8px;
     }
 
-    p {
+.card-bottom p {
       line-height: 1.5rem;
       font-size: 1rem;
       color: gray;
     }
-}
 
-.text {
-    
-    &__title {
+.text__title {
       font-size: 1.4rem;
       color: blue;
       padding-bottom: 20px;
     }
 
-    &--smaller {
+.text--smaller {
       font-size: 1.1rem;
       /*margin-top: 35px;*/
     }
-}
-
 
 .tag-container {
   margin-top: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+}
 
-  .tag {
+.tag-container .tag {
     margin-right: 5px;
     padding: 0px 10px;
     border-radius: 4px;
     background-color: red;
   }
 
-  p {
+.tag-container p {
       font-size: .7rem;
       color:white;
     }
 
-
-  .tag--red {
+.tag-container .tag--red {
     background-color: red;
   }
 
-  .tag--orange {
+.tag-container .tag--orange {
     background-color: #FF9500;
   }
 
-  .tag--yellow {
+.tag-container .tag--yellow {
     background-color: #FFC800;
   }
-  .tag--purple {
+
+.tag-container .tag--purple {
     background-color: #A100FF;
     /*background-color: gold;*/
   }
-   .tag--blue {
+
+.tag-container .tag--blue {
     background-color: blue;
   }
 
-  .tag--bluegreen {
+.tag-container .tag--bluegreen {
     background-color: #00D4AD;
   }
-}
-
-
-
-
-
-
-
 
 @-ms-viewport{
   width: device-width;
 }
 
 /*IMPORTANT TO GET THE FULLSCREEN IMAGE TO TOUCH THE BOTTOM!!*/
+
 /*html {
   height: 100%;
 }
@@ -348,13 +329,14 @@ body{
     min-height: 100%;
 }*/
 
-
-
 /*====================*/
+
 /*       MIXINS       */
+
 /*====================*/
 
 /* MOBILE Devices, Phones -- 767 PIXELS and SMALLER */
+
 @define-mixin mobile  {
     @media only screen and (max-width : 767px) {
 
@@ -362,6 +344,7 @@ body{
 }
 
 /* STANDARD Devices, Tablets -- 768 PIXELS and LARGER */
+
 @define-mixin standard  {
     @media only screen and (min-width : 768px) { 
 
@@ -369,19 +352,26 @@ body{
 }
 
 /* HOVER.CSS: Grow Shadow*/
+
 .hvr-grow-shadow {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
+  -webkit-box-shadow: 0 0 1px transparent;
+          box-shadow: 0 0 1px transparent;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: box-shadow, transform;
+  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: -webkit-box-shadow, -webkit-transform;
   transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
 }
+
 .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
@@ -391,14 +381,20 @@ body{
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
+  -webkit-box-shadow: 0 0 1px transparent;
+          box-shadow: 0 0 1px transparent;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: box-shadow, transform;
+  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: -webkit-box-shadow, -webkit-transform;
   transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
 }
+
 .hvr-grow-shadow-2:hover, .hvr-grow-shadow-2:focus, .hvr-grow-shadow-2:active {
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.035);
   transform: scale(1.035);
 }
@@ -414,15 +410,16 @@ body{
   -webkit-transition-property: all;
   transition-property: all;
 }
+
 .hvr-grow-shadow-3:hover, .hvr-grow-shadow-3:focus, .hvr-grow-shadow-3:active {
   /*box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);*/
   -webkit-transform: scale(1.07);
   transform: scale(1.07);
-  p {
-    color: cyan;
-  }
 }
 
+.hvr-grow-shadow-3:hover p, .hvr-grow-shadow-3:focus p, .hvr-grow-shadow-3:active p {
+    color: cyan;
+  }
 
 .hvr-grow-shadow-4 {
   /*display: inline-block;*/
@@ -433,15 +430,18 @@ body{
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: box-shadow, transform;
+  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: -webkit-box-shadow, -webkit-transform;
   transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
 }
+
 .hvr-grow-shadow-4:hover, .hvr-grow-shadow-2:focus, .hvr-grow-shadow-2:active {
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.035);
   transform: scale(1.035);
 }
-
-
 
 a:link    {
   /* Applies to all unvisited links */
@@ -449,6 +449,7 @@ a:link    {
   }
 
 /*NOT BEING USED*/
+
 .aa-tooltip {
     background: blue;
     font-size:10px;
@@ -465,50 +466,51 @@ a:link    {
   opacity:0.8;
 }
 
-
-
-
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
 
-    /*==========  Mobile First Method  ==========*/
+/*==========  Mobile First Method  ==========*/
 
-    /* CUSTOM, iPhone Retina */
-    /*@media only screen and (min-width : 320px) {
+/* CUSTOM, iPhone Retina */
+
+/*@media only screen and (min-width : 320px) {
     }*/
-    /* EXTRA SMALL Devices, Phones */
-    /*@media only screen and (min-width : 480px) {
+
+/* EXTRA SMALL Devices, Phones */
+
+/*@media only screen and (min-width : 480px) {
     }*/
 
 /*CUSTOM BREAKPOINT: */
-    @media only screen and (max-width : 879px) {
+
+@media only screen and (max-width : 879px) {
        /* .card-div:nth-child(odd) {
           margin-right: 0px;
         }*/
 
     }
 
+/* EXTRA SMALL Devices, Phones -- 767 PIXELS and SMALLER */
 
-    /* EXTRA SMALL Devices, Phones -- 767 PIXELS and SMALLER */
-    @media only screen and (max-width : 767px) {
+@media only screen and (max-width : 767px) {
        
     }
 
+/* SMALL Devices, Tablets -- 768 PIXELS and LARGER */
 
-
-
-    /* SMALL Devices, Tablets -- 768 PIXELS and LARGER */
-    @media only screen and (min-width : 768px) { 
+@media only screen and (min-width : 768px) { 
 
     }
 
-    /* MEDIUM Devices, Desktops -- 992 PIXELS and LARGER */
-    /*@media only screen and (min-width : 992px) {*/
+/* MEDIUM Devices, Desktops -- 992 PIXELS and LARGER */
 
-    /*}*/
+/*@media only screen and (min-width : 992px) {*/
 
-    /* LARGE Devices, Wide Screens -- 1200 PIXELS and LARGER */
-    /*@media only screen and (min-width : 1200px) {*/
+/*}*/
 
-    /*}*/
+/* LARGE Devices, Wide Screens -- 1200 PIXELS and LARGER */
+
+/*@media only screen and (min-width : 1200px) {*/
+
+/*}*/

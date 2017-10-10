@@ -58,10 +58,8 @@ gulp.task('deleteDistFolder', function() {
 
 
 
-//THE PROBLEM IS UP HEREvvv
 // TASK TO RUN WHEN A .CSS FILE IS CHANGED and SAVED
 gulp.task('styles', function() {
-  // console.log("TEEEESSSSSTTTT!!");
   return gulp.src('./app/assets/styles/styles.css')
   .pipe(postcss([cssImport, cssvars, nested, autoprefixer]))
       .on('error', function(errorInfo){
@@ -71,6 +69,17 @@ gulp.task('styles', function() {
   .pipe(gulp.dest('./app/temp/styles'));
 });
 
+
+// ADD EFAR CSS: Take production CSS file, compile with postCSS, and pipe it into the temp folder
+gulp.task('efar', function() {
+  return gulp.src('./app/assets/styles/efar.css')
+  .pipe(postcss([cssImport, cssvars, nested, autoprefixer]))
+      .on('error', function(errorInfo){
+            console.log(errorInfo.toString());
+            this.emit('end');
+      })
+  .pipe(gulp.dest('./app/temp/styles'));
+});
 
 
 
@@ -86,6 +95,8 @@ gulp.task('watch', function() {
 
         files: [
             "app/index.html",
+            // ADD EFAR HERE! 
+            "app/efar.html",
             "app/assets/js/**/*.js",
             "app/assets/styles/**/*.css"
         ],
@@ -93,7 +104,7 @@ gulp.task('watch', function() {
         //Browsersync includes a user-interface that is accessed via a separate port. The UI allows to controls all devices, push sync updates and much more.
         ui: false,
         // In ghostMode, Clicks, Scrolls & Form inputs on any device will be mirrored to all others.
-        ghostMode: false,
+        ghostMode: true,
 
         server: {
           baseDir: "app"
@@ -113,6 +124,7 @@ gulp.task('watch', function() {
       watch('./app/assets/styles/**/*.css', function() {
         //EVERY TIME WE SAVE A CHANGE IN ANY STYLES FILES, run this code:
         gulp.start('cssInject');
+        gulp.start('cssInject-efar');
       });
 
       // watch('./app/assets/scripts/**/*.js', function(){
@@ -135,6 +147,12 @@ gulp.task('cssInject', ['styles'] , function() {
     .pipe(browserSync.stream());
 });
 
+
+// ADD EFAR CSS: BROWSERSYNC AUTO REFRESHES THE CSS
+gulp.task('cssInject-efar', ['efar'] , function() {
+  return gulp.src('./app/temp/styles/efar.css')
+    .pipe(browserSync.stream());
+});
 
 
 
@@ -188,6 +206,8 @@ gulp.task('usemin', ['deleteDistFolder'], function() {
   .pipe(usemin())
   .pipe(gulp.dest("./dist"));
 });
- 
+
+
+// FINAL STEP: The BUILD task
 gulp.task('build',['deleteDistFolder', 'optimizeImages', 'usemin']);
 
