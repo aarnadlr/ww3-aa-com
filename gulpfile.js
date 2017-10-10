@@ -207,7 +207,14 @@ gulp.task('usemin', ['deleteDistFolder'], function() {
   .pipe(gulp.dest("./dist"));
 });
 
+// ADD EFAR.HTML file to DIST FILE
+gulp.task('usemin-efar', ['deleteDistFolder'], function() {
+  return gulp.src("./app/efar.html")
+  .pipe(usemin())
+  .pipe(gulp.dest("./dist"));
+});
+
 
 // FINAL STEP: The BUILD task
-gulp.task('build',['deleteDistFolder', 'optimizeImages', 'usemin']);
+gulp.task('build',['deleteDistFolder', 'optimizeImages', 'usemin', 'usemin-efar']);
 
