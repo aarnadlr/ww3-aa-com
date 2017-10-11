@@ -49,9 +49,6 @@ h1 {
   top:6px;
   right:5px;
 }
-.pad10 {
-  padding: 10px 0;
-}
 /*===================================================*/
 /* MAIN / CONTENT */
 /*===================================================*/
@@ -64,7 +61,6 @@ h1 {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-
 }
 /*align-content: center;*/
 .container p {
@@ -89,7 +85,6 @@ h1 {
 
     /*padding: 0 0px;*/
     margin:auto;
-
   }
 .container--left {
     -webkit-box-pack: start;
@@ -103,27 +98,53 @@ h1 {
 .container--marginbot40 {
     margin-bottom: 40px;
   }
-.container--marginbot60 {
+.container--marbot60 {
     margin-bottom: 60px;
   }
-.container--marginbot80 {
+.container--marbot80 {
     margin-bottom: 80px;
   }
 .container--martop50 {
     margin-top: 100px;
   }
-.card-div {
-  margin-top: 25px;
-  margin-left: 10px;
-  margin-right: 10px;
+.container--pad10 {
+  padding: 10px 0;
+}
+/* APPLIES TO 2-UP ROWS OF CARDS */
+.container-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /*flex: 1;*/
+
+  /* do not grow   - initial value: 0 */
+  /*flex-grow:   0;     */
+  
+  /* do not shrink - initial value: 1 */
+  /*flex-shrink: 0;   */
+  
+  /* width/height of box  - initial value: auto */
+  /*flex-basis:  25em; */
+}
+.fullcard {
+  margin-top: 45px;
+  margin-left: 20px;
+  margin-right: 20px;
 
   /*flex: 0 0 230px;*/
   height:auto;
   /*border: red solid 5px;*/
 
 }
-.card-div:nth-child(odd) {
-  /*margin-right: 25px;*/
+/*.container-row .fullcard:nth-of-type(1) {
+}*/
+.fullcard:first-child {
+  /*margin-top: 0px;*/
 }
 .card-img {
   width:400px;

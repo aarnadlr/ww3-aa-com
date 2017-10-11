@@ -65,9 +65,7 @@ h1 {
   right:5px;
 }
 
-.pad10 {
-  padding: 10px 0;
-}
+
 
 /*===================================================*/
 /* MAIN / CONTENT */
@@ -85,7 +83,6 @@ h1 {
       font-size: 1rem;
       color: lightgray;
     }
-
 
   &--parag {
     position: relative;
@@ -105,10 +102,7 @@ h1 {
 
     /*padding: 0 0px;*/
     margin:auto;
-
   }
-
-
   &--left {
     justify-content: flex-start;
     /*margin-left: 25px;*/
@@ -117,32 +111,48 @@ h1 {
   &--marginbot30 {
     margin-bottom: 30px;
   }
-
   &--marginbot40 {
     margin-bottom: 40px;
   }
-
-  &--marginbot60 {
+  &--marbot60 {
     margin-bottom: 60px;
   }
-
-  &--marginbot80 {
+  &--marbot80 {
     margin-bottom: 80px;
   }
-
   &--martop50 {
     margin-top: 100px;
   }
 
+  &--pad10 {
+  padding: 10px 0;
+}
+}
+
+
+/* APPLIES TO 2-UP ROWS OF CARDS */
+.container-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /*flex: 1;*/
+
+  /* do not grow   - initial value: 0 */
+  /*flex-grow:   0;     */
+  
+  /* do not shrink - initial value: 1 */
+  /*flex-shrink: 0;   */
+  
+  /* width/height of box  - initial value: auto */
+  /*flex-basis:  25em; */
 }
 
 
 
-
-.card-div {
-  margin-top: 25px;
-  margin-left: 10px;
-  margin-right: 10px;
+.fullcard {
+  margin-top: 45px;
+  margin-left: 20px;
+  margin-right: 20px;
 
   /*flex: 0 0 230px;*/
   height:auto;
@@ -150,8 +160,12 @@ h1 {
 
 }
 
-.card-div:nth-child(odd) {
-  /*margin-right: 25px;*/
+/*.container-row .fullcard:nth-of-type(1) {
+}*/
+
+
+.fullcard:first-child {
+  /*margin-top: 0px;*/
 }
 
 
@@ -171,8 +185,6 @@ h1 {
     background-color: white;
     padding: 40px;
     height: auto;
-
-
 
     .copy {
       margin-top: 8px;
@@ -379,9 +391,6 @@ a:link    {
   /* CSS3 standard */
   opacity:0.8;
 }
-
-
-
 
 
 .vbox-close{
