@@ -70,7 +70,7 @@ gulp.task('styles', function() {
 });
 
 
-// ADD EFAR CSS: Take production CSS file, compile with postCSS, and pipe it into the temp folder
+// ADD EFAR CSS: Take production CSS file, compile with postCSS, and pipe it into the TEMP folder
 gulp.task('efar', function() {
   return gulp.src('./app/assets/styles/efar.css')
   .pipe(postcss([cssImport, cssvars, nested, autoprefixer]))

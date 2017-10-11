@@ -183,6 +183,7 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
 }
 .tag-container .tag {
     margin-right: 5px;
@@ -215,6 +216,22 @@ h1 {
   }
 .tag-container .tag--gold {
     background-color: #FDBE00;
+  }
+/*COLOR SCHEME: Blue-gray to bright-green*/
+.tag-container .tag--blgr1 {
+    background-color: #587291;
+  }
+.tag-container .tag--blgr2 {
+    background-color: #2F97C1;
+  }
+.tag-container .tag--blgr3 {
+    background-color: #1CCAD8;
+  }
+.tag-container .tag--blgr4 {
+    background-color: #15E6CD;
+  }
+.tag-container .tag--blgr5 {
+    background-color: #0CF574;
   }
 .display-none {
   display: none;
