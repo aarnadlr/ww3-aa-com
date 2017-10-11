@@ -1,5 +1,4 @@
 /*CSS RESET*/
-
 * {
   margin: 0;
   padding: 0;
@@ -28,17 +27,18 @@ html, body{
 }
 
 /*===================================================*/
-/*HEADER AREA*/
+/*HEADER*/
 /*===================================================*/
 
 .book-cover {
-  margin-top: 70px;
-  width: 70px;
-  height: 70px;
+  margin-top: 60px;
+  width: 210px;
+  height: 210px;
   /*border-radius: 300px;*/
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
+/*TITLE*/
 h1 {
   color: $roy;
   font-size: 2.3rem;
@@ -48,26 +48,6 @@ h1 {
 h2 {
   color: cyan;
   font-size: 1.0rem;
-}
-
-
-
-/*SOCIAL ICONS AT TOP*/
-.icon {
-  width:20px;
-  height: 20px;
-  margin: 0 20px;
-}
-
-
-.fa-envelope-o {
-  position: relative;
-  top:6px;
-  right:5px;
-}
-
-.pad10 {
-  padding: 10px 0;
 }
 
 /*===================================================*/
@@ -81,11 +61,7 @@ h2 {
   background-color: rgba(255,255,255,.8);
   padding: 20px 20px;
   border-radius: 6px;
-
   margin: auto !important;
-  /*text-align: center;*/
-  /*margin-bottom: 50px;*/
-
 }
 
 
@@ -93,17 +69,10 @@ h2 {
     display: block;
     margin-top: 40px;
     margin-bottom: 50px;
-    /*padding-bottom: 50px;*/
 
     .amazon__logo {
       width:110px;
-      /*margin: 0 auto;*/
-      /*text-align: center;*/
-      /*position: relative;*/
-      /*left:6px;*/
-      /*bottom: 7px;*/
     }
-
 }
 
 
@@ -113,8 +82,6 @@ h2 {
   flex-wrap: wrap;
   display: flex;
   align-items: center;
-  /*align-items: stretch;*/
-  /*align-content: center;*/
 
   p {
       line-height: 1.7rem;
@@ -129,23 +96,8 @@ h2 {
 
   &--parag {
     position: relative;
-    /*left: 8px;*/
     max-width: 440px;
-
-    /*padding: 0 0px;*/
     margin:auto;
-    
-    p {
-    /*columns: 2;*/
-    }
-  }
-
-  &--contact {
-    max-width: 300px;
-
-    /*padding: 0 0px;*/
-    margin:auto;
-
   }
 
 
@@ -170,11 +122,9 @@ h2 {
     margin-bottom: 80px;
   }
 
-
   &--martop30 {
     margin-top: 30px;
   }
-
 
   &--martop50 {
     margin-top: 100px;
@@ -195,15 +145,12 @@ h2 {
   top: 0;
   padding: 15px 30px;
   border: 2px solid rgba(255, 255, 255, 0.7);
-  /*font: normal normal bold 20px/50px Arial, Helvetica, sans-serif;*/
   font-family: $inc, monospace;
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
   font-weight: normal;
-  /*text-transform: uppercase;*/
   -o-text-overflow: clip;
   text-overflow: clip;
-  /*background: none;*/
   margin-bottom: 100px;
 }
 
@@ -212,20 +159,11 @@ h2 {
   background: rgba(255, 255, 255, 0.1);
 }
 
-
-
-
-
-
 .card-div {
   margin-top: 25px;
   margin-left: 10px;
   margin-right: 10px;
-
-  /*flex: 0 0 230px;*/
   height:auto;
-  /*border: red solid 5px;*/
-
 }
 
 .card-div:nth-child(odd) {
@@ -246,29 +184,6 @@ p.caption {
     font-size: .9rem;
   }
 
-
-
-
-
-.card-bottom {
-    width:400px;
-    /*height: 200px;*/
-    background-color: white;
-    padding: 40px;
-    height: auto;
-
-
-
-    .copy {
-      margin-top: 8px;
-    }
-
-    p {
-      line-height: 1.5rem;
-      font-size: 1rem;
-      color: gray;
-    }
-}
 
 .text {
     
@@ -300,141 +215,50 @@ p.caption {
       font-size: .7rem;
       color:white;
     }
-
-
-  .tag--red {
-    background-color: red;
-  }
-
-  .tag--orange {
-    background-color: #FF9500;
-  }
-
-  .tag--yellow {
-    background-color: #FFC800;
-  }
-  .tag--purple {
-    background-color: #A100FF;
-    /*background-color: gold;*/
-  }
-   .tag--blue {
-    background-color: blue;
-  }
-
-  .tag--bluegreen {
-    background-color: #00D4AD;
-  }
 }
-
-
-
-
-
-
-
 
 @-ms-viewport{
   width: device-width;
 }
 
-/*IMPORTANT TO GET THE FULLSCREEN IMAGE TO TOUCH THE BOTTOM!!*/
-/*html {
-  height: 100%;
-}
-
-body{
-    min-height: 100%;
-}*/
 
 
-
-/*====================*/
-/*       MIXINS       */
-/*====================*/
-
-/* MOBILE Devices, Phones -- 767 PIXELS and SMALLER */
-@define-mixin mobile  {
-    @media only screen and (max-width : 767px) {
-
-    }
-}
-
-/* STANDARD Devices, Tablets -- 768 PIXELS and LARGER */
-@define-mixin standard  {
-    @media only screen and (min-width : 768px) { 
-
-    }
-}
 
 /* HOVER.CSS: Grow Shadow*/
-.hvr-grow-shadow {
+
+/*INITIALIZE HOVER SCALE*/
+.hvr-grow {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
+
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform;
-}
-.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 
-.hvr-grow-shadow-2 {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform;
-}
-.hvr-grow-shadow-2:hover, .hvr-grow-shadow-2:focus, .hvr-grow-shadow-2:active {
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+
+/*SCALE TO 1.035*/
+.hvr-scale-1-035:hover, .hvr-scale-1-035:focus, .hvr-scale-1-035:active {
   -webkit-transform: scale(1.035);
   transform: scale(1.035);
 }
 
-.hvr-grow-shadow-3 {
-  /*display: inline-block;*/
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  /*box-shadow: 0 0 1px transparent;*/
-  -webkit-transition-duration: 0.9s;
-  transition-duration: 0.9s;
-  -webkit-transition-property: all;
-  transition-property: all;
-}
-.hvr-grow-shadow-3:hover, .hvr-grow-shadow-3:focus, .hvr-grow-shadow-3:active {
-  /*box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);*/
-  -webkit-transform: scale(1.07);
-  transform: scale(1.07);
-  p {
-    color: cyan;
-  }
-}
+
 
 
 .hvr-grow-shadow-4 {
-  /*display: inline-block;*/
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  /*box-shadow: 0 0 1px transparent;*/
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 .hvr-grow-shadow-4:hover, .hvr-grow-shadow-2:focus, .hvr-grow-shadow-2:active {
-  /*box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);*/
   -webkit-transform: scale(1.07);
   transform: scale(1.07);
 
@@ -445,69 +269,4 @@ body{
 a:link    {
   /* Applies to all unvisited links */
   text-decoration:  none;
-  }
-
-/*NOT BEING USED*/
-.aa-tooltip {
-    background: blue;
-    font-size:10px;
-    height:50px;
-    width:100px;
-    padding:10px;
-    color:#fff; 
-    z-index: 99;
-    border: none !important;
-    border-radius: 0;
-  /* for IE */
-  filter:alpha(opacity=80);
-  /* CSS3 standard */
-  opacity:0.8;
 }
-
-
-
-
-/*==================================================
-=            Bootstrap 3 Media Queries             =
-==================================================*/
-
-    /*==========  Mobile First Method  ==========*/
-
-    /* CUSTOM, iPhone Retina */
-    /*@media only screen and (min-width : 320px) {
-    }*/
-    /* EXTRA SMALL Devices, Phones */
-    /*@media only screen and (min-width : 480px) {
-    }*/
-
-/*CUSTOM BREAKPOINT: */
-    @media only screen and (max-width : 879px) {
-       /* .card-div:nth-child(odd) {
-          margin-right: 0px;
-        }*/
-
-    }
-
-
-    /* EXTRA SMALL Devices, Phones -- 767 PIXELS and SMALLER */
-    @media only screen and (max-width : 767px) {
-       
-    }
-
-
-
-
-    /* SMALL Devices, Tablets -- 768 PIXELS and LARGER */
-    @media only screen and (min-width : 768px) { 
-
-    }
-
-    /* MEDIUM Devices, Desktops -- 992 PIXELS and LARGER */
-    /*@media only screen and (min-width : 992px) {*/
-
-    /*}*/
-
-    /* LARGE Devices, Wide Screens -- 1200 PIXELS and LARGER */
-    /*@media only screen and (min-width : 1200px) {*/
-
-    /*}*/

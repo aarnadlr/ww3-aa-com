@@ -229,67 +229,52 @@ body{
     }
 }
 /* HOVER.CSS: Grow Shadow*/
-.hvr-grow-shadow {
+/*INITIALIZE HOVER SCALE*/
+.hvr-grow {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  -webkit-box-shadow: 0 0 1px transparent;
-          box-shadow: 0 0 1px transparent;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow, transform;
-  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
-  transition-property: -webkit-box-shadow, -webkit-transform;
-  transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
-}
-.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
-  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-}
-.hvr-grow-shadow-2 {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-box-shadow: 0 0 1px transparent;
-          box-shadow: 0 0 1px transparent;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow, transform;
-  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
-  transition-property: -webkit-box-shadow, -webkit-transform;
-  transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
-}
-.hvr-grow-shadow-2:hover, .hvr-grow-shadow-2:focus, .hvr-grow-shadow-2:active {
-  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.035);
-  transform: scale(1.035);
-}
-.hvr-grow-shadow-3 {
-  /*display: inline-block;*/
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  /*box-shadow: 0 0 1px transparent;*/
+
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: all;
   transition-property: all;
 }
-.hvr-grow-shadow-3:hover, .hvr-grow-shadow-3:focus, .hvr-grow-shadow-3:active {
-  /*box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);*/
+/*SCALE TO 1.035*/
+.hvr-scale-1-035:hover, .hvr-scale-1-035:focus, .hvr-scale-1-035:active {
+  -webkit-transform: scale(1.035);
+  transform: scale(1.035);
+}
+/*SCALE TO 1.04*/
+.hvr-scale-1-04:hover, .hvr-scale-1-04:focus, .hvr-scale-1-04:active {
   -webkit-transform: scale(1.04);
   transform: scale(1.04);
 }
-.hvr-grow-shadow-3:hover p, .hvr-grow-shadow-3:focus p, .hvr-grow-shadow-3:active p {
-    color: cyan;
-  }
+/*SCALE TO 1.07*/
+.hvr-scale-1-07:hover, .hvr-scale-1-07:focus, .hvr-scale-1-07:active {
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+}
+/*SCALE TO 1.1*/
+.hvr-scale-1-1:hover, .hvr-scale-1-1:focus, .hvr-scale-1-1:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/*SCALE TO 1.5*/
+.hvr-scale-1-5:hover, .hvr-scale-1-5:focus, .hvr-scale-1-5:active {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+/*ADD UNDER SHADOW */
+.hvr-shadow:hover, .hvr-shadow:focus, .hvr-shadow:active {
+                /*  x   y   blur ?   color                 */
+-webkit-box-shadow: 0px 3px 12px 0px rgba(50, 50, 50, 0.6);
+box-shadow:         0px 3px 12px 0px rgba(50, 50, 50, 0.6);
+}
+p.hvr-cyan:hover{
+  color: cyan;
+}
 a:link    {
   /* Applies to all unvisited links */
   text-decoration:  none;
