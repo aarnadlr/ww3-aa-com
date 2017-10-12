@@ -523,7 +523,8 @@
 			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 1161,
+				"buffer_size": 32299,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +532,7 @@
 			"file": "app/assets/js/app.js",
 			"settings":
 			{
-				"buffer_size": 204,
+				"buffer_size": 1949,
 				"line_ending": "Unix"
 			}
 		}
@@ -611,12 +612,7 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/aaronadler/Dropbox/HT-CS-JS-DEV/js30/1-css-clock-NoGu-DIST",
-		"/Users/aaronadler/Dropbox/HT-CS-JS-DEV/js30/1-css-clock-NoGu-DIST/app",
-		"/Users/aaronadler/Dropbox/HT-CS-JS-DEV/js30/1-css-clock-NoGu-DIST/app/assets",
-		"/Users/aaronadler/Dropbox/HT-CS-JS-DEV/js30/1-css-clock-NoGu-DIST/app/assets/images",
-		"/Users/aaronadler/Dropbox/HT-CS-JS-DEV/js30/1-css-clock-NoGu-DIST/app/assets/js",
-		"/Users/aaronadler/Dropbox/HT-CS-JS-DEV/js30/1-css-clock-NoGu-DIST/app/assets/styles"
+		"/Users/aaronadler/Dropbox/HT-CS-JS-DEV/ww3-aa-com"
 	],
 	"file_history":
 	[
@@ -791,15 +787,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1161,
+						"buffer_size": 32299,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								57,
-								60
+								0,
+								0
 							]
 						],
 						"settings":
@@ -819,7 +815,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 204,
+						"buffer_size": 1949,
 						"regions":
 						{
 						},
