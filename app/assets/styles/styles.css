@@ -54,6 +54,21 @@ h1 {
   font-size: 2rem;
 }
 
+h2 {
+
+	padding-top: 30px;
+	text-align: center;
+  color: cyan;
+  font-size: 1rem;
+}
+
+.header-box{
+	border: 1px solid cyan;
+	margin: 60px 20px 0 20px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
 .parens {
   color: cyan;
   font-size: 1.7rem;
@@ -73,15 +88,50 @@ h1 {
   right:5px;
 }
 
+/*.fa-arrow-down{
+	color: cyan;
+	text-align: center;
+	padding-top: 15px;
+}*/
+.fa-arrow-circle-down{
+	color: cyan;
+	text-align: center;
+	padding-top: 15px;
+}
 
 
 /*===================================================*/
 /* MAIN / CONTENT */
 /*===================================================*/
 
+.wrapper{
+	display: flex;
+	/*flex-direction: column;*/
+	justify-content: center;
+}
+
+.column{
+	display: flex;
+	flex-direction: column;
+	/*justify-content: space-between;*/
+}
+
+
+
+.container--left{
+	align-self: flex-start;
+}
+
+.container--right{
+	align-self: flex-start;
+	/*align-items: flex-start;*/
+}
+
 .container {
   display: flex;
+  /*flex-direction: column;*/
   justify-content: center;
+  
   flex-wrap: wrap;
   /*align-items: stretch;*/
   /*align-content: center;*/
@@ -138,10 +188,15 @@ h1 {
 }
 
 
+
+
+
 /* APPLIES TO 2-UP ROWS OF CARDS */
 .container-row {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  /*justify-content: center;*/
   flex-wrap: wrap;
   /*flex: 1;*/
 

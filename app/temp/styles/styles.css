@@ -42,6 +42,19 @@ h1 {
   color: #1164ff;
   font-size: 2rem;
 }
+h2 {
+
+	padding-top: 30px;
+	text-align: center;
+  color: cyan;
+  font-size: 1rem;
+}
+.header-box{
+	border: 1px solid cyan;
+	margin: 60px 20px 0 20px;
+	text-align: center;
+	padding-bottom: 20px;
+}
 .parens {
   color: cyan;
   font-size: 1.7rem;
@@ -57,17 +70,58 @@ h1 {
   top:6px;
   right:5px;
 }
+/*.fa-arrow-down{
+	color: cyan;
+	text-align: center;
+	padding-top: 15px;
+}*/
+.fa-arrow-circle-down{
+	color: cyan;
+	text-align: center;
+	padding-top: 15px;
+}
 /*===================================================*/
 /* MAIN / CONTENT */
 /*===================================================*/
+.wrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	/*flex-direction: column;*/
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.column{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	/*justify-content: space-between;*/
+}
+.container--left{
+	-ms-flex-item-align: start;
+	    align-self: flex-start;
+}
+.container--right{
+	-ms-flex-item-align: start;
+	    align-self: flex-start;
+	/*align-items: flex-start;*/
+}
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /*flex-direction: column;*/
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  
   -ms-flex-wrap: wrap;
+  
       flex-wrap: wrap;
 }
 /*align-content: center;*/
@@ -123,9 +177,14 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*justify-content: center;*/
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   /*flex: 1;*/
