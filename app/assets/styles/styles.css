@@ -32,8 +32,9 @@ $rob: 'Roboto', sans-serif;
 html, body{
   font-family: $inc;
   background-color: $dark; 
+  /*box-sizing: border-box;*/
   /*background-color: purple;*/
-  margin: 10px;
+  /*margin: 0px;*/
   /*-webkit-font-smoothing: antialiased !important;*/
 }
 
@@ -65,6 +66,7 @@ h2 {
 .header-box{
 	border: 1px solid cyan;
 	margin: 60px 20px 0 20px;
+	
 	text-align: center;
 	padding-bottom: 20px;
 }
@@ -108,6 +110,8 @@ h2 {
 	display: flex;
 	/*flex-direction: column;*/
 	justify-content: center;
+	flex-wrap: wrap;
+
 }
 
 .column{
@@ -118,12 +122,12 @@ h2 {
 
 
 
-.container--left{
-	align-self: flex-start;
+.column--left{
+	/*align-self: flex-start;*/
 }
 
-.container--right{
-	align-self: flex-start;
+.column--right{
+	/*align-self: flex-start;*/
 	/*align-items: flex-start;*/
 }
 
@@ -222,6 +226,10 @@ h2 {
   /*border: red solid 5px;*/
 
 }
+
+/*.gallery{
+
+}*/
 
 /*.container-row .fullcard:nth-of-type(1) {
 }*/
@@ -329,10 +337,10 @@ h2 {
     background-color: #1CCAD8;
   }
   .tag--blgr4 {
-    background-color: #15E6CD;
+    background-color: #14DCC4;
   }
   .tag--blgr5 {
-    background-color: #0CF574;
+    background-color: #0BE56D;
   }
 
 }
@@ -343,13 +351,15 @@ h2 {
 }
 
 #thankyou p{
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 25px;
 }
 
 
 
-
+footer{
+	margin-bottom: 250px;
+}
 
 
 
@@ -495,7 +505,7 @@ a:link    {
     /*@media only screen and (min-width : 480px) {
     }*/
 
-/*CUSTOM BREAKPOINT: */
+		/*CUSTOM BREAKPOINT: */
     @media only screen and (max-width : 879px) {
        /* .card-div:nth-child(odd) {
           margin-right: 0px;
@@ -503,11 +513,62 @@ a:link    {
 
     }
 
+/*MOBILE BREAKPOINT*/
+/*MOBILE BREAKPOINT*/
 
-    /* EXTRA SMALL Devices, Phones -- 767 PIXELS and SMALLER */
-    @media only screen and (max-width : 767px) {
-       
-    }
+/* EXTRA SMALL Devices, Phones -- 879 PIXELS and SMALLER */
+@media only screen and (max-width : 879px) {
+
+html, body{
+  /*margin: 0;*/
+}
+
+.column--right .header-box {
+	/*padding-top: 25px;*/
+	margin-top: 130px;
+}
+
+.container{
+	/*padding: 0 30px;*/
+	/*margin: 0 30px;*/
+}
+
+.wrapper{
+
+}
+
+.column{
+
+}
+
+
+.container--left{
+
+}
+
+.container--right{
+
+}
+
+
+.header-box{
+
+}
+
+
+
+.fullcard {
+}
+
+.fullcard .text{
+}
+
+.fullcard-sm{
+}
+
+
+
+}
 
 
 
