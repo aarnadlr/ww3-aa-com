@@ -32,6 +32,20 @@ html, body{
 /*===================================================*/
 /*HEADER AREA*/
 /*===================================================*/
+header{
+	/*margin: 10px 10px 10px 0;*/
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.social-bottom{
+/*	display: flex;
+	justify-content: flex-end;*/
+	/*width: 20%;*/
+	/*justify-self: start;*/
+}
+.social-col--inner{
+
+}
 .profile-pic {
   margin-top: 70px;
   width: 70px;
@@ -50,12 +64,24 @@ h2 {
   color: cyan;
   font-size: 1rem;
 }
-.header-box{
-	border: 1px solid cyan;
-	margin: 60px 20px 0 20px;
-	
-	text-align: center;
-	padding-bottom: 20px;
+.social-wrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	width: 100%;-ms-flex-wrap: wrap;flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.social-col{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	/*width: 100%;*/
 }
 .parens {
   color: cyan;
@@ -95,6 +121,7 @@ h2 {
 	        justify-content: center;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
+	/*width: 100%;*/
 
 }
 .column{
@@ -105,7 +132,15 @@ h2 {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	/*justify-content: space-between;*/
+	/*width: 50%;*/
+	/*justify-content: center;*/
+}
+.header-box{
+	border: 1px solid cyan;
+	margin: 60px 20px 0 20px;
+
+	text-align: center;
+	padding-bottom: 20px;
 }
 .column--left{
 	/*align-self: flex-start;*/
@@ -122,10 +157,6 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  
-  -ms-flex-wrap: wrap;
-  
-      flex-wrap: wrap;
 }
 /*align-content: center;*/
 .container p {
@@ -145,6 +176,7 @@ h2 {
 .container--parag p {
     /*columns: 2;*/
     }
+/*flex-wrap: wrap;*/
 .container--contact {
     max-width: 300px;
 
@@ -162,6 +194,15 @@ h2 {
   }
 .container--marginbot40 {
     margin-bottom: 40px;
+  }
+.container--marbot10 {
+    margin-bottom: 10px;
+  }
+.container--marbot20 {
+    margin-bottom: 20px;
+  }
+.container--marbot60 {
+    margin-bottom: 60px;
   }
 .container--marbot60 {
     margin-bottom: 60px;
@@ -235,7 +276,8 @@ h2 {
     height: auto;
 }
 .card-bottom .copy {
-      margin-top: 8px;
+			margin-top: 8px;
+			margin-bottom: 30px;
     }
 .card-bottom p {
       line-height: 1.5rem;
@@ -260,7 +302,7 @@ h2 {
 }
 .tag-container .tag {
     margin-right: 5px;
-    padding: 0px 10px;
+    padding: 0px 8px;
     border-radius: 4px;
     background-color: red;
   }
@@ -292,19 +334,19 @@ h2 {
   }
 /*COLOR SCHEME: Blue-gray to bright-green*/
 .tag-container .tag--blgr1 {
-    background-color: #587291;
+    background-color: #0d71e4;
   }
 .tag-container .tag--blgr2 {
-    background-color: #2F97C1;
+    background-color: rgb(28, 159, 211);
   }
 .tag-container .tag--blgr3 {
-    background-color: #1CCAD8;
+    background-color: rgb(1, 188, 212);
   }
 .tag-container .tag--blgr4 {
-    background-color: #14DCC4;
+    background-color: rgb(0, 212, 184);
   }
 .tag-container .tag--blgr5 {
-    background-color: #0BE56D;
+    background-color: rgb(0, 224, 120);
   }
 .display-none {
   display: none;
@@ -383,8 +425,8 @@ body{
 /*ADD UNDER SHADOW */
 .hvr-shadow:hover, .hvr-shadow:focus, .hvr-shadow:active {
                 /*  x   y   blur ?   color                 */
--webkit-box-shadow: 0px 3px 12px 0px rgba(50, 50, 50, 0.6);
-box-shadow:         0px 3px 12px 0px rgba(50, 50, 50, 0.6);
+-webkit-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.3);
+box-shadow:         0px 4px 6px 0px rgba(50, 50, 50, 0.3);
 }
 p.hvr-cyan:hover{
   color: cyan;
@@ -433,11 +475,32 @@ a:link    {
     }
 /*MOBILE BREAKPOINT*/
 /*MOBILE BREAKPOINT*/
-/* EXTRA SMALL Devices, Phones -- 879 PIXELS and SMALLER */
-@media only screen and (max-width : 879px) {
+/* EXTRA SMALL Devices, Phones -- 500 PIXELS and SMALLER */
+@media only screen and (max-width : 500px) {
 
 html, body{
   /*margin: 0;*/
+}
+
+
+.social-wrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	/*flex-wrap: wrap;*/
+	/*width: 90%;*/
+	/*margin: 0 20%;*/
+}
+
+.social-col{
+	/*display: flex;*/
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	/*width: 100%;*/
 }
 
 .column--right .header-box {
