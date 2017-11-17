@@ -21,14 +21,21 @@
 		font-size: 1.5rem;
 	}
 	&__core-col{
-		line-height: 4rem;
-		width: 250px;
+		line-height: 2rem;
+		width: 280px;
 		/* background: rgb(0, 0, 75); */
-		margin: 30px 50px;
+		margin: 50px 50px;
 		font-size: .9rem;
+		
 	}
-
+	&__core-col p{
+		/* margin-top: 0; */
+		margin-bottom: 30px;
+		font-size: 1rem !important;
+	}
 }
+
+
 
 i {
 	color: rgb(27, 47, 233);
@@ -68,8 +75,14 @@ li ul{
 .fa-bars{
 	color: rgb(255, 230, 0);
 }
+.fa-certificate{
+	color: rgb(240, 240, 0);
+}
 .fa-window-maximize{
 	color: rgb(229, 255, 0);
+}
+.fa-git{
+	color: rgb(200, 255, 0);
 }
 .fa-columns{
 	color: rgb(179, 255, 0);
@@ -93,9 +106,9 @@ li ul{
 .fa-terminal{
 	color: rgb(0, 195, 255);
 }
-.fa-git{
+/* .fa-git{
 	color: rgb(0, 162, 255);
-}
+} */
 .fa-briefcase{
 	color: rgb(0, 102, 255);
 }
