@@ -1,0 +1,105 @@
+
+
+.coreskills-box{
+	border: 1px solid cyan;
+	margin: 60px 20px 0 20px;
+	text-align: center;
+	padding-bottom: 20px;
+
+	&--coreskills{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		/* background: blue; */
+		width: 840px;
+		text-align: left;
+		padding-bottom: 50px;
+		/* margin: 5rem; */
+	}
+	&--coreskills h1{
+		color: cyan;
+		font-size: 1.5rem;
+	}
+	&__core-col{
+		line-height: 4rem;
+		width: 250px;
+		/* background: rgb(0, 0, 75); */
+		margin: 30px 50px;
+		font-size: .9rem;
+	}
+
+}
+
+i {
+	color: rgb(27, 47, 233);
+}
+
+.skill{
+	color: rgb(190, 255, 250);
+	line-height: 2;
+	list-style: none;
+}
+li ul{
+	/* list-style: none; */
+	line-height: 5;
+}
+
+.fa-pencil{
+	color: red;
+}
+.fa-youtube-play{
+	color: rgb(255, 50, 0);
+}
+.fa-camera{
+	color: rgb(255, 80, 0);
+}
+.fa-picture-o{
+	color: rgb(255, 110, 0);
+}
+.fa-html5{
+	color: rgb(255, 140, 0);
+}
+.fa-css3{
+	color: rgb(255, 170, 0);
+}
+.fa-th-large{
+	color: rgb(255, 200, 0);
+}
+.fa-bars{
+	color: rgb(255, 230, 0);
+}
+.fa-window-maximize{
+	color: rgb(229, 255, 0);
+}
+.fa-columns{
+	color: rgb(179, 255, 0);
+}
+
+
+
+
+.fa-code{
+	color: rgb(136, 255, 0);
+}
+.fa-file-code-o{
+	color: rgb(0, 255, 98);
+}
+.fa-code-fork{
+	color: rgb(0, 247, 255);
+}
+.fa-space-shuttle{
+	color: rgb(0, 217, 255);
+}
+.fa-terminal{
+	color: rgb(0, 195, 255);
+}
+.fa-git{
+	color: rgb(0, 162, 255);
+}
+.fa-briefcase{
+	color: rgb(0, 102, 255);
+}
+.fa-language{
+	color: rgb(98, 0, 255);
+}
+

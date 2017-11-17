@@ -1,3 +1,5 @@
+@import url("_coreskills-section.css");
+
 /*CSS RESET*/
 * {
   margin: 0;
@@ -145,24 +147,7 @@ h2 {
 	/*justify-content: center;*/
 }
 
-.header-box{
-	border: 1px solid cyan;
-	margin: 60px 20px 0 20px;
 
-	text-align: center;
-	padding-bottom: 20px;
-}
-
-
-
-.column--left{
-	/*align-self: flex-start;*/
-}
-
-.column--right{
-	/*align-self: flex-start;*/
-	/*align-items: flex-start;*/
-}
 
 .container {
   display: flex;
@@ -183,13 +168,7 @@ h2 {
     position: relative;
     /*left: 8px;*/
     max-width: 440px;
-
-    /*padding: 0 0px;*/
     margin:auto;
-    
-    p {
-    /*columns: 2;*/
-    }
   }
 
   &--contact {
@@ -234,31 +213,22 @@ h2 {
 
   &--pad10 {
   padding: 10px 0;
+	}
+
 }
+
+
+.header-box{
+	border: 1px solid cyan;
+	margin: 60px 20px 0 20px;
+
+	text-align: center;
+	padding-bottom: 20px;
 }
 
 
 
 
-
-/* APPLIES TO 2-UP ROWS OF CARDS */
-.container-row {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /*justify-content: center;*/
-  flex-wrap: wrap;
-  /*flex: 1;*/
-
-  /* do not grow   - initial value: 0 */
-  /*flex-grow:   0;     */
-  
-  /* do not shrink - initial value: 1 */
-  /*flex-shrink: 0;   */
-  
-  /* width/height of box  - initial value: auto */
-  /*flex-basis:  25em; */
-}
 
 
 
@@ -266,19 +236,10 @@ h2 {
   margin-top: 45px;
   margin-left: 20px;
   margin-right: 20px;
-
   /*flex: 0 0 230px;*/
   height:auto;
   /*border: red solid 5px;*/
-
 }
-
-/*.gallery{
-
-}*/
-
-/*.container-row .fullcard:nth-of-type(1) {
-}*/
 
 
 .fullcard:first-child {
@@ -323,10 +284,24 @@ h2 {
       padding-bottom: 20px;
     }
 
+		&__title--white {
+      /* font-size: 1.4rem; */
+      color: white;
+      /* padding-bottom: 20px; */
+		}
+
+		&__title--center {
+			display: block;
+			text-align: center;
+      /* font-size: 1.4rem; */
+      /* color: white; */
+      /* padding-bottom: 20px; */
+    }
     &--smaller {
       font-size: 1.1rem;
       /*margin-top: 35px;*/
-    }
+		}
+		
 }
 
 
@@ -566,70 +541,29 @@ a:link    {
 /* EXTRA SMALL Devices, Phones -- 500 PIXELS and SMALLER */
 @media only screen and (max-width : 500px) {
 
-html, body{
-  /*margin: 0;*/
-}
+		html, body{
+			/*margin: 0;*/
+		}
 
 
-.social-wrapper{
-	display: flex;
-	justify-content: center;
-	/*flex-wrap: wrap;*/
-	/*width: 90%;*/
-	/*margin: 0 20%;*/
-}
+		.social-wrapper{
+			display: flex;
+			justify-content: center;
+			/*flex-wrap: wrap;*/
+			/*width: 90%;*/
+			/*margin: 0 20%;*/
+		}
 
-.social-col{
-	/*display: flex;*/
-	justify-content: center;
-	/*width: 100%;*/
-}
+		.social-col{
+			/*display: flex;*/
+			justify-content: center;
+			/*width: 100%;*/
+		}
 
-.column--right .header-box {
-	/*padding-top: 25px;*/
-	margin-top: 130px;
-}
-
-.container{
-	/*padding: 0 30px;*/
-	/*margin: 0 30px;*/
-}
-
-.wrapper{
-
-}
-
-.column{
-
-}
-
-
-.container--left{
-
-}
-
-.container--right{
-
-}
-
-
-.header-box{
-
-}
-
-
-
-.fullcard {
-}
-
-.fullcard .text{
-}
-
-.fullcard-sm{
-}
-
-
-
+		.column--right .header-box {
+			/*padding-top: 25px;*/
+			margin-top: 130px;
+		}
 }
 
 
