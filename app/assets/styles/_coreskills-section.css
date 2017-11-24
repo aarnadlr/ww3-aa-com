@@ -75,9 +75,6 @@ li ul{
 .fa-bars{
 	color: rgb(255, 230, 0);
 }
-.fa-certificate{
-	color: rgb(240, 240, 0);
-}
 .fa-window-maximize{
 	color: rgb(229, 255, 0);
 }
@@ -91,11 +88,26 @@ li ul{
 
 
 
+
+/* ==========SECOND ROW ========== */
+
 .fa-code{
 	color: rgb(136, 255, 0);
 }
+.fa-certificate{
+	color: rgb(0, 255, 85);
+}
+
+.fa-area-chart{
+	color: rgb(0, 255, 170);
+}
+.fa-file-video-o{
+	color: rgb(0, 255, 200);
+}
+
+
 .fa-file-code-o{
-	color: rgb(0, 255, 98);
+	color: rgb(0, 255, 234);
 }
 .fa-code-fork{
 	color: rgb(0, 247, 255);
@@ -106,9 +118,7 @@ li ul{
 .fa-terminal{
 	color: rgb(0, 195, 255);
 }
-/* .fa-git{
-	color: rgb(0, 162, 255);
-} */
+
 .fa-briefcase{
 	color: rgb(0, 102, 255);
 }
