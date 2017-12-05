@@ -111,8 +111,9 @@ h2 {
 
 .fa-envelope-o {
   position: relative;
-  top:6px;
+  top:0px;
   right:5px;
+  color: rgb(22, 73, 255);
 }
 
 /*.fa-arrow-down{
@@ -182,7 +183,7 @@ h2 {
     /*margin-left: 25px;*/
   }
 
-  &--marginbot30 {
+  &--marbot30 {
     margin-bottom: 30px;
   }
 
@@ -193,23 +194,35 @@ h2 {
   &--marbot10 {
     margin-bottom: 10px;
   }
-
   &--marbot20 {
     margin-bottom: 20px;
   }
+  &--marbot60 {
+    margin-bottom: 60px;
+  }
 
-  &--marbot60 {
-    margin-bottom: 60px;
-  }
-  &--marbot60 {
-    margin-bottom: 60px;
-  }
   &--marbot80 {
     margin-bottom: 80px;
   }
-  &--martop50 {
-    margin-top: 100px;
+
+
+  &--martop20 {
+    margin-top: 20px;
   }
+  &--martop30 {
+    margin-top: 30px;
+  }
+  &--martop40 {
+    margin-top: 40px;
+  }
+  &--martop50 {
+    margin-top: 50px;
+  }
+
+  &--martop70 {
+    margin-top: 70px;
+  }
+
 
   &--pad10 {
   padding: 10px 0;
@@ -220,7 +233,7 @@ h2 {
 
 .header-box{
 	border: 1px solid cyan;
-	margin: 60px 20px 0 20px;
+	margin: 50px 20px 0 20px;
 
 	text-align: center;
 	padding-bottom: 20px;
