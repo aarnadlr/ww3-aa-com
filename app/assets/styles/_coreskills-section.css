@@ -75,6 +75,15 @@ li ul{
 .fa-bars{
 	color: rgb(255, 230, 0);
 }
+
+.fa-code {
+    color: rgb(229, 255, 0);
+}
+
+.fa-area-chart {
+    color: rgb(229, 255, 0);
+}
+
 .fa-window-maximize{
 	color: rgb(229, 255, 0);
 }
@@ -91,18 +100,13 @@ li ul{
 
 /* ==========SECOND ROW ========== */
 
-.fa-code{
-	color: rgb(136, 255, 0);
-}
+
 .fa-certificate{
 	color: rgb(0, 255, 85);
 }
 
-.fa-area-chart{
-	color: rgb(0, 255, 170);
-}
 .fa-file-video-o{
-	color: rgb(0, 255, 200);
+	color: rgb(229, 255, 0);
 }
 
 
