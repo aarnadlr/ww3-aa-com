@@ -2,9 +2,10 @@
 
 .coreskills-box{
 	border: 1px solid cyan;
-	margin: 60px 20px 0 20px;
+	margin: 60px 0px 0 0px;
 	text-align: center;
-	padding-bottom: 20px;
+  padding-bottom: 20px;
+  width:70%;
 }
 
 	.coreskills-box--coreskills{
@@ -17,7 +18,7 @@
 		    -ms-flex-pack: center;
 		        justify-content: center;
 		/* background: blue; */
-		width: 840px;
+		width: 90%;
 		text-align: left;
 		padding-bottom: 50px;
 		/* margin: 5rem; */
@@ -30,9 +31,9 @@
 
 	.coreskills-box__core-col{
 		line-height: 2rem;
-		width: 280px;
+		width: 300px;
 		/* background: rgb(0, 0, 75); */
-		margin: 50px 50px;
+		margin: 20px 30px;
 		font-size: .9rem;
 		
 	}
@@ -388,7 +389,18 @@ h2 {
 
 
 
+.header-box{
+	border: 1px solid cyan;
+	margin: 0 auto;
+  width: 100%;
+  text-align: center;
+	padding-bottom: 20px;
+}
+
+
+
 .wrapper{
+  margin: 0 auto;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -398,21 +410,16 @@ h2 {
 	        justify-content: center;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	/*width: 100%;*/
+	width: 100%;
 
 }
 
 
 
 .column{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	/*width: 50%;*/
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* width: 100%; */
 	/*justify-content: center;*/
 }
 
@@ -550,12 +557,8 @@ h2 {
 
 
 
-.header-box{
-	border: 1px solid cyan;
-	margin: 40px 20px 0 20px;
-
-	text-align: center;
-	padding-bottom: 20px;
+#email{
+  margin-bottom: 0px;
 }
 
 

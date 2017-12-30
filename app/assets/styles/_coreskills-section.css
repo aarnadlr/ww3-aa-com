@@ -2,16 +2,17 @@
 
 .coreskills-box{
 	border: 1px solid cyan;
-	margin: 60px 20px 0 20px;
+	margin: 60px 0px 0 0px;
 	text-align: center;
-	padding-bottom: 20px;
+  padding-bottom: 20px;
+  width:70%;
 
 	&--coreskills{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		/* background: blue; */
-		width: 840px;
+		width: 90%;
 		text-align: left;
 		padding-bottom: 50px;
 		/* margin: 5rem; */
@@ -22,9 +23,9 @@
 	}
 	&__core-col{
 		line-height: 2rem;
-		width: 280px;
+		width: 300px;
 		/* background: rgb(0, 0, 75); */
-		margin: 50px 50px;
+		margin: 20px 30px;
 		font-size: .9rem;
 		
 	}
