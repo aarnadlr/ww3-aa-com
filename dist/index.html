@@ -32,18 +32,34 @@
 
   <!-- BALLOON CSS (TOOLTIPS) -->
   <link rel="stylesheet" href="/assets/styles/balloon.css"/>
-
+<!-- TACHYONS CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.0/css/tachyons.min.css" />
   <!-- NATIVE CSS -->
   <link rel="stylesheet" href="/assets/styles/styles.css"/>
-
 
 </head>
 <body>
 <!-- - - - - - - START BODY - - - - - - -->
 
+
+
+
+
+<!-- TACHYONS NAVBAR -->
+<nav class="dt w-100 border-box pa3 ph4-ns">
+		<div class="dtc v-mid w-75 tr">
+			<!-- <a class="link dim white-60 f6 f5-ns dib mr3 mr4-ns" href="#coretoolset" title="Store">Skills / Toolset</a> -->
+			<!-- <a class="link dim white-60 f6 f5-ns dib" href="#thankyou" title="Contact">Contact</a> -->
+			<a class=" aa-nav grow f6 f5-ns dib mr3 mr4-ns" href="#coretoolset" title="Store"><i class="fa fa-suitcase" aria-hidden="true"></i> Toolset</a>
+			<a class=" aa-nav grow  f6 f5-ns dib" href="#thankyou" title="Contact"><i class="fa fa-envelope-o" aria-hidden="true"></i>Contact</a>
+		</div>
+</nav>
+
+
+
 <header>
 
-	<div class="container">
+	<div class="container mt4">
 	    <img class="profile-pic" src="assets/images/profile-pic.jpg" alt="">
 	</div>
 
@@ -83,13 +99,13 @@
 
 
 	<!-- CONTACT / EMAIL -->
-	<div id='email' class="container pad10">
+	<!-- <div id='email' class="container pad10">
 	    <a href="mailto:aaronadler@gmail.com">
 	      <p class="hvr-grow hvr-scale-1-04 hvr-cyan">
 	        <i class="fa fa-envelope-o" aria-hidden="true"></i> aaronadler(at)gmail(.com)
 	      </p>
 	    </a>
-	</div>
+	</div> -->
 
 </header>
 
@@ -99,35 +115,6 @@
 <!-- FLEXBOX WRAPPER  -->
 <div class="wrapper"> 
 
-
-      <!-- SINGLE CARD DIV: FILM/TV 1 - THE WEATHER CHANNEL NOAH -->
-      <div class="fullcard hvr-grow hvr-scale-1-035 fullcard-sm">
-        <a class="venobox-wide" data-vbtype="video" title='The Weather Channel: "Noah"' data-autoplay="true" href="http://vimeo.com/95035102">
-
-              <!-- CARD TOP-IMAGE -->
-              <div class="card-img">
-                <img src="assets/images/noah-rect.jpg" alt="">
-              </div>
-
-                <!-- CARD BOTTOM -->
-              <div class="card-bottom">
-
-                    <!-- TEXT: TITLE and COPY -->
-                    <div class="text">
-                      <span class="text__title">The Weather Channel "Noah"</span>
-                      <p class="copy">Film to launch The Weather Channel's personalized weather feature on their mobile app. Agency: BBH New York</p>
-                    </div>
-                    
-                    <!-- COLOR TAGS CONTAINER -->
-                    <div class="tag-container">
-                      <div class="tag tag--purple hvr-grow hvr-scale-1-07 hvr-shadow"><p>film/tv</p></div>
-                      <div class="tag tag--blue hvr-grow hvr-scale-1-07 hvr-shadow"><p>creative concept</p></div>
-                      <!-- <div class="tag tag--yellow"><p>express</p></div> -->
-                    </div>
-              </div>
-
-          </a>
-      </div>
 
 
 
@@ -176,50 +163,18 @@
 
 
 
-      <!-- SINGLE CARD DIV: FILM/TV 2 - FEDEX SWEEPS-->
-      <div class="fullcard hvr-grow hvr-scale-1-035 fullcard-sm">
-        
-            <a class="venobox-wide" data-vbtype="video" title='FedEx "Sweeps"' data-autoplay="true" href="http://vimeo.com/8253231">
-
-            <!-- CARD IMAGE -->
-            <div class="card-img">
-              <img src="assets/images/sweeps-rect.jpg" alt="">
-            </div>
-
-            <!-- CARD BOTTOM -->
-            <div class="card-bottom">
-
-                <!-- TEXT: TITLE and COPY -->
-                <div class="text">
-                  <span class="text__title">FedEx "Sweeps"</span>
-                  <p class="copy">Creative concept to promote FedEx small business services. Agency: BBDO New York</p>
-                </div>
-                
-                <!-- TAG CONTAINER -->
-                <div class="tag-container">
-                  <div class="tag tag--purple hvr-grow hvr-scale-1-07 hvr-shadow"><p>film/tv</p></div>
-                  <div class="tag tag--blue hvr-grow hvr-scale-1-07 hvr-shadow"><p>creative concept</p></div>
-                  <!-- <div class="tag tag--yellow"><p>express</p></div> -->
-                </div>
-
-              </div>
-            </a>
-      </div>
 
 
 
 
 
-
-
-
-		<!-- SINGLE CARD DIV: FB CAMERA EFFECT - MUSEUM OF ICE CREAM -->
+		<!-- SINGLE CARD DIV: FB CAMERA EFFECT - DAFT PUNK -->
 		<div class="fullcard hvr-grow hvr-scale-1-035 fullcard-sm">
-			<a title='Museum of Ice Cream' href="https://www.facebook.com/160758384681784/videos/162009941223295/" target="_blank">
+			<a title='Daft Punk' href="https://www.facebook.com/160758384681784/videos/166745714083051" target="_blank">
 		
 				<!-- CARD IMAGE -->
 				<div class="card-img">
-					<img src="assets/images/fbcam-moic.gif" alt="">
+					<img src="assets/images/daftpunk-320.gif" alt="">
 				</div>
 		
 				<!-- CARD BOTTOM -->
@@ -227,8 +182,8 @@
 		
 					<!-- TEXT: TITLE and COPY -->
 					<div class="text">
-						<span class="text__title">Museum of Ice Cream - Facebook Camera AR</span>
-						<p class="copy">Interactive AR 3D-based Facebook Camera Effect for the Museum of Ice Cream. Click to view the video and Camera Effect
+						<span class="text__title">Daft Punk - Facebook Camera Effect AR</span>
+						<p class="copy">The Daft Punk "Guy Manuel" Helmet. Now available as a wearable Facebook Camera Effect. Click to view the video and experience the live Camera Effect
 							on your mobile device.
 						</p>
 					</div>
@@ -236,26 +191,82 @@
 					<!-- TAG CONTAINER -->
 					<div class="tag-container">
 						<div class="tag tag--blgr1 hvr-grow hvr-scale-1-07 hvr-shadow">
-							<p>ARStudio</p>
+							<p>arStudio</p>
 						</div>
 						<div class="tag tag--blgr2 hvr-grow hvr-scale-1-07 hvr-shadow">
-							<p>facebook</p>
+							<p>blender3D</p>
 						</div>
 						<div class="tag tag--blgr3 hvr-grow hvr-scale-1-07 hvr-shadow">
-							<p>javascript</p>
+							<p>afEffects</p>
 						</div>
 						<div class="tag tag--blgr4 hvr-grow hvr-scale-1-07 hvr-shadow">
-							<p>blender</p>
+							<p>facebook</p>
 						</div>
-						<div class="tag tag--blgr5 hvr-grow hvr-scale-1-07 hvr-shadow">
+						<!-- <div class="tag tag--blgr5 hvr-grow hvr-scale-1-07 hvr-shadow">
 							<p>mobile</p>
-						</div>
+						</div> -->
 					</div>
 		
 				</div>
 			</a>
 		</div>
-		
+
+
+
+
+
+
+
+
+<!-- SINGLE CARD DIV: ARss SITE -->
+<div class="fullcard hvr-grow hvr-scale-1-035 fullcard-sm">
+  <a title='ARss' href="https://thearss.com/" target="_blank">
+
+    <!-- CARD IMAGE -->
+    <div class="card-img">
+      <img src="assets/images/arss.gif" alt="">
+    </div>
+
+    <!-- CARD BOTTOM -->
+    <div class="card-bottom">
+
+      <!-- TEXT: TITLE and COPY -->
+      <div class="text">
+        <span class="text__title">ARsocialstudio<sup><small>TM</small></sup></span>
+        <p class="copy">ARss is a microservice I created to build and deploy custom 3D Facebook Camera Effect experiences for clients. 3D modeling, development and publication to the Camera Effects Platform. Click to view site.
+        </p>
+      </div>
+
+      <!-- TAG CONTAINER -->
+      <div class="tag-container">
+        <div class="tag tag--blgr1 hvr-grow hvr-scale-1-07 hvr-shadow">
+          <p>tachyons</p>
+        </div>
+        <div class="tag tag--blgr2 hvr-grow hvr-scale-1-07 hvr-shadow">
+          <p>jquery</p>
+        </div>
+        <div class="tag tag--blgr3 hvr-grow hvr-scale-1-07 hvr-shadow">
+          <p>arStudio</p>
+        </div>
+        <div class="tag tag--blgr4 hvr-grow hvr-scale-1-07 hvr-shadow">
+          <p>blender</p>
+        </div>
+        <div class="tag tag--blgr5 hvr-grow hvr-scale-1-07 hvr-shadow">
+          <p>afEffects</p>
+        </div>
+      </div>
+
+    </div>
+  </a>
+</div>
+
+
+
+
+
+
+
+
 		
 		
 		
@@ -287,7 +298,7 @@
 						<div class="tag tag--blgr1 hvr-grow hvr-scale-1-07 hvr-shadow"><p>aftereffects</p></div>
 						<div class="tag tag--blgr2 hvr-grow hvr-scale-1-07 hvr-shadow"><p>codepen</p></div>
 						<div class="tag tag--blgr3 hvr-grow hvr-scale-1-07 hvr-shadow"><p>svg</p></div>
-						<div class="tag tag--blgr4 hvr-grow hvr-scale-1-07 hvr-shadow"><p>design</p></div>
+						<div class="tag tag--blgr4 hvr-grow hvr-scale-1-07 hvr-shadow"><p>animation</p></div>
 						<div class="tag tag--blgr5 hvr-grow hvr-scale-1-07 hvr-shadow"><p>json</p></div>
 					</div>
 		
@@ -298,76 +309,51 @@
 
 
 
-      <!-- SINGLE CARD DIV: FILM/TV 7 - FOX SPORTS WIND-->
-	    <div class="fullcard hvr-grow hvr-scale-1-035 fullcard-sm">
-	      <a class="venobox-wide" data-vbtype="video" title='Fox Sports "Wind"' data-autoplay="true" href="http://vimeo.com/8285842">
-
-	      <!-- CARD IMAGE -->
-	      <div class="card-img">
-	        <img src="assets/images/wind-rect.jpg" alt="">
-	      </div>
-
-	      <!-- CARD BOTTOM -->
-	      <div class="card-bottom">
-
-	          <!-- TEXT: TITLE and COPY -->
-	          <div class="text">
-	            <span class="text__title">Fox Sports "Wind"</span>
-	            <p class="copy">Creative concept to promote the NBA on Fox Sports. Agency: Cliff Freeman & Partners</p>
-	          </div>
-	          
-	          <!-- TAG CONTAINER -->
-	          <div class="tag-container">
-	            <div class="tag tag--purple hvr-grow hvr-scale-1-07 hvr-shadow"><p>film/tv</p></div>
-	            <div class="tag tag--blue hvr-grow hvr-scale-1-07 hvr-shadow"><p>creative concept</p></div>
-	            <!-- <div class="tag tag--yellow"><p>express</p></div> -->
-	          </div>
-
-	        </div>
-	      </a>
-	    </div>
 
 
 
+<!-- SINGLE CARD DIV: FB CAMERA EFFECT - MUSEUM OF ICE CREAM -->
+<div class="fullcard hvr-grow hvr-scale-1-035 fullcard-sm">
+  <a title='Museum of Ice Cream' href="https://www.facebook.com/160758384681784/videos/162009941223295/" target="_blank">
 
+    <!-- CARD IMAGE -->
+    <div class="card-img">
+      <img src="assets/images/fbcam-moic.gif" alt="">
+    </div>
 
+    <!-- CARD BOTTOM -->
+    <div class="card-bottom">
 
+      <!-- TEXT: TITLE and COPY -->
+      <div class="text">
+        <span class="text__title">Museum of Ice Cream - Facebook Camera Effect AR</span>
+        <p class="copy">Interactive AR 3D-based Facebook Camera Effect for the Museum of Ice Cream. Click to view the video and Camera Effect
+          on your mobile device.
+        </p>
+      </div>
 
-	    <!-- SINGLE CARD DIV: PRINT 1 - DIRECTV THUMBS-->
-	    
-	    <div class="gallery">
-	      <div class="fullcard hvr-grow hvr-scale-1-035 fullcard-sm">
-	        <a class="venobox" title='DirecTV "Bicep"' data-gall="directv" href="assets/images/bicep.jpg">
-	    
-	          
-	                    <!-- CARD TOP -->
-	                    <div class="card-img">
-	                      <img src="assets/images/thumbs2-rect.jpg" alt="">
-	                    </div>
-	              
-	                    <!-- CARD BOTTOM -->
-	                    <div class="card-bottom">
-	              
-	                        <!-- TEXT: TITLE and COPY -->
-	                        <div class="text">
-	                          <span class="text__title">DirecTV "Thumbs"</span>
-	                          <p class="copy">Creative concept to promote the breadth of DirecTV channels and services. Agency: BBDO New York</p>
-	                        </div>
-	                        
-	                        <!-- TAG CONTAINER -->
-	                        <div class="tag-container">
-	                          <div class="tag tag--bluegreen hvr-grow hvr-scale-1-07 hvr-shadow"><p>design</p></div>
-	                          <div class="tag tag--blue hvr-grow hvr-scale-1-07 hvr-shadow"><p>creative concept</p></div>
-	                          <!-- <div class="tag tag--yellow"><p>express</p></div> -->
-	                        </div>
-	              
-	                      </div>
-	        </a>
-	      </div>
-	      <a class="venobox" title='DirecTV "Abs"' data-gall="directv" href="assets/images/abs.jpg"></a>
-			</div>
+      <!-- TAG CONTAINER -->
+      <div class="tag-container">
+        <div class="tag tag--blgr1 hvr-grow hvr-scale-1-07 hvr-shadow">
+          <p>arStudio</p>
+        </div>
+        <div class="tag tag--blgr2 hvr-grow hvr-scale-1-07 hvr-shadow">
+          <p>facebook</p>
+        </div>
+        <div class="tag tag--blgr3 hvr-grow hvr-scale-1-07 hvr-shadow">
+          <p>javascript</p>
+        </div>
+        <div class="tag tag--blgr4 hvr-grow hvr-scale-1-07 hvr-shadow">
+          <p>blender</p>
+        </div>
+        <div class="tag tag--blgr5 hvr-grow hvr-scale-1-07 hvr-shadow">
+          <p>mobile</p>
+        </div>
+      </div>
 
-
+    </div>
+  </a>
+</div>
 
 
 
@@ -404,7 +390,7 @@
 					<p>svg</p>
 				</div>
 				<div class="tag tag--blgr4 hvr-grow hvr-scale-1-07 hvr-shadow">
-					<p>design</p>
+					<p>animation</p>
 				</div>
 				<div class="tag tag--blgr5 hvr-grow hvr-scale-1-07 hvr-shadow">
 					<p>json</p>
@@ -414,9 +400,6 @@
 		</div>
 	</a>
 </div>
-
-
-
 
 
 
@@ -552,6 +535,206 @@
 	</a>
 	<a class="venobox-wide" title='Facebook "Stay Close to Your Circle"' data-gall="fb" href="assets/images/fbstories-2.jpg"></a>
 	<a class="venobox-wide" title='Facebook "Stay Close to Your Circle"' data-gall="fb" href="assets/images/fbstories-3.jpg"></a>
+</div>
+
+
+
+
+
+
+<!-- SINGLE CARD DIV: NEW YORK TIMES OPEN DOORS -->
+<div class="fullcard hvr-grow hvr-scale-1-035 fullcard-sm">
+	<a title='The New York Times "Doors"' href="https://dribbble.com/shots/3995982-The-New-York-Times-Real-Estate-Doors" target="_blank">
+
+		<!-- CARD IMAGE -->
+		<div class="card-img">
+			<img src="assets/images/nyt-doors-ww3.gif" alt="">
+		</div>
+
+		<!-- CARD BOTTOM -->
+		<div class="card-bottom">
+
+			<!-- TEXT: TITLE and COPY -->
+			<div class="text">
+				<span class="text__title">The New York Times "Doors"</span>
+				<p class="copy">Animated motion graphic for The New York Times' Real Estate listings and services. Click to view on Dribbble.
+				</p>
+			</div>
+
+			<!-- TAG CONTAINER -->
+			<div class="tag-container">
+				<div class="tag tag--blgr1 hvr-grow hvr-scale-1-07 hvr-shadow">
+					<p>aftereffects</p>
+				</div>
+				<div class="tag tag--blgr2 hvr-grow hvr-scale-1-07 hvr-shadow">
+					<p>illustrator</p>
+				</div>
+				<div class="tag tag--blgr3 hvr-grow hvr-scale-1-07 hvr-shadow">
+					<p>svg</p>
+				</div>
+				<div class="tag tag--blgr4 hvr-grow hvr-scale-1-07 hvr-shadow">
+					<p>design</p>
+				</div>
+				<!-- <div class="tag tag--blgr5 hvr-grow hvr-scale-1-07 hvr-shadow"><p>motion</p></div> -->
+			</div>
+
+		</div>
+	</a>
+</div>
+
+
+
+
+
+
+
+
+<!-- SINGLE CARD DIV: FILM/TV 2 - FEDEX SWEEPS-->
+<div class="fullcard hvr-grow hvr-scale-1-035 fullcard-sm">
+
+	<a class="venobox-wide" data-vbtype="video" title='FedEx "Sweeps"' data-autoplay="true" href="http://vimeo.com/8253231">
+
+		<!-- CARD IMAGE -->
+		<div class="card-img">
+			<img src="assets/images/sweeps-rect.jpg" alt="">
+		</div>
+
+		<!-- CARD BOTTOM -->
+		<div class="card-bottom">
+
+			<!-- TEXT: TITLE and COPY -->
+			<div class="text">
+				<span class="text__title">FedEx "Sweeps"</span>
+				<p class="copy">Creative concept to promote FedEx small business services. Agency: BBDO New York</p>
+			</div>
+
+			<!-- TAG CONTAINER -->
+			<div class="tag-container">
+				<div class="tag tag--purple hvr-grow hvr-scale-1-07 hvr-shadow">
+					<p>film/tv</p>
+				</div>
+				<div class="tag tag--blue hvr-grow hvr-scale-1-07 hvr-shadow">
+					<p>creative concept</p>
+				</div>
+				<!-- <div class="tag tag--yellow"><p>express</p></div> -->
+			</div>
+
+		</div>
+	</a>
+</div>
+
+
+
+
+
+
+      <!-- SINGLE CARD DIV: FILM/TV 7 - FOX SPORTS WIND-->
+	    <div class="fullcard hvr-grow hvr-scale-1-035 fullcard-sm">
+	      <a class="venobox-wide" data-vbtype="video" title='Fox Sports "Wind"' data-autoplay="true" href="http://vimeo.com/8285842">
+
+	      <!-- CARD IMAGE -->
+	      <div class="card-img">
+	        <img src="assets/images/wind-rect.jpg" alt="">
+	      </div>
+
+	      <!-- CARD BOTTOM -->
+	      <div class="card-bottom">
+
+	          <!-- TEXT: TITLE and COPY -->
+	          <div class="text">
+	            <span class="text__title">Fox Sports "Wind"</span>
+	            <p class="copy">Creative concept to promote the NBA on Fox Sports. Agency: Cliff Freeman & Partners</p>
+	          </div>
+	          
+	          <!-- TAG CONTAINER -->
+	          <div class="tag-container">
+	            <div class="tag tag--purple hvr-grow hvr-scale-1-07 hvr-shadow"><p>film/tv</p></div>
+	            <div class="tag tag--blue hvr-grow hvr-scale-1-07 hvr-shadow"><p>creative concept</p></div>
+	            <!-- <div class="tag tag--yellow"><p>express</p></div> -->
+	          </div>
+
+	        </div>
+	      </a>
+	    </div>
+
+
+
+
+
+
+
+	    <!-- SINGLE CARD DIV: PRINT 1 - DIRECTV THUMBS-->
+	    
+	    <div class="gallery">
+	      <div class="fullcard hvr-grow hvr-scale-1-035 fullcard-sm">
+	        <a class="venobox" title='DirecTV "Bicep"' data-gall="directv" href="assets/images/bicep.jpg">
+	    
+	          
+	                    <!-- CARD TOP -->
+	                    <div class="card-img">
+	                      <img src="assets/images/thumbs2-rect.jpg" alt="">
+	                    </div>
+	              
+	                    <!-- CARD BOTTOM -->
+	                    <div class="card-bottom">
+	              
+	                        <!-- TEXT: TITLE and COPY -->
+	                        <div class="text">
+	                          <span class="text__title">DirecTV "Thumbs"</span>
+	                          <p class="copy">Creative concept to promote the breadth of DirecTV channels and services. Agency: BBDO New York</p>
+	                        </div>
+	                        
+	                        <!-- TAG CONTAINER -->
+	                        <div class="tag-container">
+	                          <div class="tag tag--bluegreen hvr-grow hvr-scale-1-07 hvr-shadow"><p>design</p></div>
+	                          <div class="tag tag--blue hvr-grow hvr-scale-1-07 hvr-shadow"><p>creative concept</p></div>
+	                          <!-- <div class="tag tag--yellow"><p>express</p></div> -->
+	                        </div>
+	              
+	                      </div>
+	        </a>
+	      </div>
+	      <a class="venobox" title='DirecTV "Abs"' data-gall="directv" href="assets/images/abs.jpg"></a>
+			</div>
+
+
+
+
+
+
+
+
+<!-- SINGLE CARD DIV: FILM/TV 1 - THE WEATHER CHANNEL NOAH -->
+<div class="fullcard hvr-grow hvr-scale-1-035 fullcard-sm">
+	<a class="venobox-wide" data-vbtype="video" title='The Weather Channel: "Noah"' data-autoplay="true" href="http://vimeo.com/95035102">
+
+		<!-- CARD TOP-IMAGE -->
+		<div class="card-img">
+			<img src="assets/images/noah-rect.jpg" alt="">
+		</div>
+
+		<!-- CARD BOTTOM -->
+		<div class="card-bottom">
+
+			<!-- TEXT: TITLE and COPY -->
+			<div class="text">
+				<span class="text__title">The Weather Channel "Noah"</span>
+				<p class="copy">Film to launch The Weather Channel's personalized weather feature on their mobile app. Agency: BBH New York</p>
+			</div>
+
+			<!-- COLOR TAGS CONTAINER -->
+			<div class="tag-container">
+				<div class="tag tag--purple hvr-grow hvr-scale-1-07 hvr-shadow">
+					<p>film/tv</p>
+				</div>
+				<div class="tag tag--blue hvr-grow hvr-scale-1-07 hvr-shadow">
+					<p>creative concept</p>
+				</div>
+				<!-- <div class="tag tag--yellow"><p>express</p></div> -->
+			</div>
+		</div>
+
+	</a>
 </div>
 
 
@@ -1074,42 +1257,6 @@
 
 
 
-    <!-- SINGLE CARD DIV: NEW YORK TIMES OPEN DOORS -->
-    <div class="fullcard hvr-grow hvr-scale-1-035 fullcard-sm">
-      <a title='The New York Times "Doors"' href="https://dribbble.com/shots/3995982-The-New-York-Times-Real-Estate-Doors" target="_blank">
-    
-          <!-- CARD IMAGE -->
-          <div class="card-img">
-            <img src="assets/images/nyt-doors-ww3.gif" alt="">
-          </div>
-    
-          <!-- CARD BOTTOM -->
-          <div class="card-bottom">
-    
-              <!-- TEXT: TITLE and COPY -->
-              <div class="text">
-                <span class="text__title">The New York Times "Doors"</span>
-                <p class="copy">Animated motion graphic for The New York Times' Real Estate listings and services. Click to view on Dribbble.
-                </p>
-              </div>
-              
-              <!-- TAG CONTAINER -->
-              <div class="tag-container">
-                <div class="tag tag--blgr1 hvr-grow hvr-scale-1-07 hvr-shadow"><p>aftereffects</p></div>
-                <div class="tag tag--blgr2 hvr-grow hvr-scale-1-07 hvr-shadow"><p>illustrator</p></div>
-                <div class="tag tag--blgr3 hvr-grow hvr-scale-1-07 hvr-shadow"><p>svg</p></div>
-                <div class="tag tag--blgr4 hvr-grow hvr-scale-1-07 hvr-shadow"><p>design</p></div>
-                <!-- <div class="tag tag--blgr5 hvr-grow hvr-scale-1-07 hvr-shadow"><p>motion</p></div> -->
-              </div>
-    
-          </div>
-        </a>
-      </div>
-    
-
-
-
-
 
 
 
@@ -1241,26 +1388,26 @@
 
 
 
-
-			<!-- SINGLE CARD DIV: YAMAHA -->
+<!-- 
+			SINGLE CARD DIV: YAMAHA
 			<div class="fullcard hvr-grow hvr-scale-1-035 fullcard-sm">
           <a title="Yamaha Digital Drums" href="http://yamaha.aaronadler.com" target="_blank">
         
-              <!-- CARD IMAGE -->
+              CARD IMAGE
               <div class="card-img">
                 <img src="assets/images/digitalDrums-rect.gif" alt="">
               </div>
         
-              <!-- CARD BOTTOM -->
+              CARD BOTTOM
               <div class="card-bottom">
         
-                  <!-- TEXT: TITLE and COPY -->
+                  TEXT: TITLE and COPY
                   <div class="text">
                     <span class="text__title">Yamaha Digital Drums</span>
                     <p class="copy">Digital activation to promote Yamaha drum modules.</p>
                   </div>
                   
-                  <!-- TAG CONTAINER -->
+                  TAG CONTAINER
                   <div class="tag-container">
                     <div class="tag tag--blgr1 hvr-grow hvr-scale-1-07 hvr-shadow"><p>html5</p></div>
                     <div class="tag tag--blgr2 hvr-grow hvr-scale-1-07 hvr-shadow"><p>css3</p></div>
@@ -1271,10 +1418,8 @@
         
               </div>
             </a>
-          </div>
+          </div> -->
 
-          
-          
 
 
 
@@ -1362,26 +1507,26 @@
 
 
 
-
-      <!-- SINGLE CARD DIV: SIMP INT LEADERBOARD -->
+<!-- 
+      SINGLE CARD DIV: SIMP INT LEADERBOARD
     <div class="fullcard hvr-grow hvr-scale-1-035 fullcard-sm">
       <a title="Internet Leaderboard" href="https://int-leaderboard.herokuapp.com" target="_blank">
     
-          <!-- CARD IMAGE -->
+          CARD IMAGE
           <div class="card-img">
             <img src="assets/images/leaderboard-rect.gif" alt="">
           </div>
     
-          <!-- CARD BOTTOM -->
+          CARD BOTTOM
           <div class="card-bottom">
     
-              <!-- TEXT: TITLE and COPY -->
+              TEXT: TITLE and COPY
               <div class="text">
                 <span class="text__title">Internet Leaderboard</span>
                 <p class="copy">Enter your opponents and teammates. Update point counts. The rankings automagically re-order to show latest standings.</p>
               </div>
               
-              <!-- TAG CONTAINER -->
+              TAG CONTAINER
               <div class="tag-container">
                 <div class="tag tag--blgr1 hvr-grow hvr-scale-1-07 hvr-shadow"><p>react</p></div>
                 <div class="tag tag--blgr2 hvr-grow hvr-scale-1-07 hvr-shadow"><p>meteor</p></div>
@@ -1392,7 +1537,9 @@
     
           </div>
         </a>
-      </div>
+      </div> -->
+
+
 
 
 </div> <!--  END WRAPPER  -->
@@ -1408,7 +1555,7 @@
 <!--  START WRAPPER  -->
 
 <!-- <div class="wrapper"> -->
-	<div class="container">
+	<div id="coretoolset" class="container">
 			
 		
 		<div class="coreskills-box coreskills-box--coreskills">
@@ -1469,7 +1616,7 @@
 
 
 
-<footer>
+<footer class="pb5">
       <!-- THANK YOU -->
       <div id="thankyou" class="container container--martop70">
           <p>
@@ -1489,6 +1636,11 @@
 
 </footer>
 
+<!-- <br>
+<br>
+<br>
+<br>
+<br> -->
 
 <!-- - - - - - - END BODY - - - - - - -->
 

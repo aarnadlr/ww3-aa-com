@@ -223,6 +223,47 @@ li ul{
 
 
 
+/* CSS VARIABLES */
+
+
+
+:root{
+  /* --arss-red: #ff0064; */
+  --aa-cyan: #A5FFFF;
+	--aa-nav: #003376;
+	--nav-white: rgba(255, 255, 255, 0.709);
+	--nav-cyan: #00fbff;
+  /* --placeholder: rgba(203, 0, 149, 0.5); */
+}
+
+
+
+navblue: rgb(22, 73, 255) */
+
+.aa-cyan{
+  background: var(---aa-cyan);
+}
+
+
+
+.aa-cyan{
+  background: var(---aa-cyan);
+}
+
+
+
+.aa-nav{
+  color: var(--nav-white);
+}
+
+
+
+.aa-nav:hover{
+  color: var(--nav-cyan);
+}
+
+
+
 /*===================================================*/
 
 
@@ -237,7 +278,8 @@ li ul{
 
 html, body{
   font-family: 'Inconsolata', monospace;
-  background-color: #061633; 
+	background-color: #061633;
+	/* color: $roy; */
   /*box-sizing: border-box;*/
   /*background-color: purple;*/
   /*margin: 0px;*/
@@ -570,6 +612,7 @@ h2 {
   /*flex: 0 0 230px;*/
   height:auto;
   /*border: red solid 5px;*/
+  border-radius: 5px;
 }
 
 
@@ -665,7 +708,7 @@ h2 {
 .tag-container .tag {
     margin-right: 5px;
     padding: 0px 8px;
-    border-radius: 4px;
+    border-radius: 2px;
     background-color: red;
   }
 
