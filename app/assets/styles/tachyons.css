@@ -1571,6 +1571,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .ml6 { margin-left: 8rem; }
 .ml7 { margin-left: 16rem; }
 .mr0 { margin-right: 0; }
+/* .mr-half { margin-right: .15rem; } */
 .mr1 { margin-right: .25rem; }
 .mr2 { margin-right: .5rem; }
 .mr3 { margin-right: 1rem; }

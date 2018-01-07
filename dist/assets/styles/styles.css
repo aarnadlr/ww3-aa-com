@@ -232,7 +232,8 @@ li ul{
   --aa-cyan: #A5FFFF;
 	--aa-nav: #003376;
 	--nav-white: rgba(255, 255, 255, 0.709);
-	--nav-cyan: #00fbff;
+  --nav-cyan: #00fbff;
+  --bright-blue: rgb(22, 73, 255);
   /* --placeholder: rgba(203, 0, 149, 0.5); */
 }
 
@@ -253,7 +254,7 @@ navblue: rgb(22, 73, 255) */
 
 
 .aa-nav{
-  color: var(--nav-white);
+  /* color: var(--nav-white); */
 }
 
 
@@ -261,6 +262,16 @@ navblue: rgb(22, 73, 255) */
 .aa-nav:hover{
   color: var(--nav-cyan);
 }
+
+
+
+.bright-blue{
+  color: var(--bright-blue);
+}
+
+
+
+.mr-half { margin-right: .15rem; }
 
 
 
@@ -398,7 +409,7 @@ h2 {
   position: relative;
   top:0px;
   right:5px;
-  color: rgb(22, 73, 255);
+
 }
 
 
