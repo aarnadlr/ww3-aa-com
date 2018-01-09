@@ -496,7 +496,7 @@ h2 {
 
 
 .container p {
-      line-height: 1.7rem;
+      line-height: 1.9rem;
       font-size: 1rem;
       color: lightgray;
     }
@@ -510,8 +510,9 @@ h2 {
 .container--parag {
     /* position: relative; */
     /*left: 8px;*/
-    max-width: 408px;
+    max-width: 480px;
     margin: auto;
+
   }
 
 
