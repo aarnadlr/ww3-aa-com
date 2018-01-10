@@ -231,6 +231,8 @@ li ul{
   /* --arss-red: #ff0064; */
   --aa-cyan: #A5FFFF;
 	--aa-nav: #003376;
+	--aa-db: #020039;
+	--aa-lime: #a0f42b;
 	--nav-white: rgba(255, 255, 255, 0.709);
   --nav-cyan: #00fbff;
   --bright-blue: rgb(22, 73, 255);
@@ -248,7 +250,7 @@ navblue: rgb(22, 73, 255) */
 
 
 .aa-cyan{
-  background: var(---aa-cyan);
+  background: var(--aa-cyan);
 }
 
 
@@ -261,6 +263,12 @@ navblue: rgb(22, 73, 255) */
 
 .aa-nav:hover{
   color: var(--nav-cyan);
+}
+
+
+
+.bg-aalime{
+  background: var(--aa-lime);
 }
 
 
@@ -289,7 +297,7 @@ navblue: rgb(22, 73, 255) */
 
 html, body{
   font-family: 'Inconsolata', monospace;
-	background-color: #061633;
+	background-color: var(--aa-db);
 	/* color: $roy; */
   /*box-sizing: border-box;*/
   /*background-color: purple;*/
@@ -498,7 +506,7 @@ h2 {
 .container p {
       line-height: 1.9rem;
       font-size: 1rem;
-      color: lightgray;
+      /* color: lightgray; */
     }
 
 
