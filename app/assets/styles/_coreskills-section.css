@@ -1,7 +1,8 @@
 
 
 .coreskills-box{
-	border: 1px solid cyan;
+	border: 1px solid #7db9e5;
+	/* border: 1px solid #4a9eda; */
 	margin: 60px 0px 0 0px;
 	text-align: center;
   padding-bottom: 20px;
@@ -18,7 +19,7 @@
 		/* margin: 5rem; */
 	}
 	&--coreskills h1{
-		color: cyan;
+		/* color: cyan; */
 		font-size: 1.5rem;
 	}
 	&__core-col{
@@ -43,7 +44,7 @@ i {
 }
 
 .skill{
-	color: rgb(190, 255, 250);
+	/* color: rgb(190, 255, 250); */
 	line-height: 2;
 	list-style: none;
 }

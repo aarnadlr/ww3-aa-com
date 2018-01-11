@@ -217,7 +217,7 @@ h2 {
   p {
       line-height: 1.9rem;
       font-size: 1rem;
-      /* color: lightgray; */
+      /* color: lightest-blue; */
     }
 
   &--parag {

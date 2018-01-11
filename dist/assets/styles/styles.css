@@ -1,7 +1,8 @@
 
 
 .coreskills-box{
-	border: 1px solid cyan;
+	border: 1px solid #7db9e5;
+	/* border: 1px solid #4a9eda; */
 	margin: 60px 0px 0 0px;
 	text-align: center;
   padding-bottom: 20px;
@@ -25,7 +26,7 @@
 	}
 
 	.coreskills-box--coreskills h1{
-		color: cyan;
+		/* color: cyan; */
 		font-size: 1.5rem;
 	}
 
@@ -53,7 +54,7 @@ i {
 
 
 .skill{
-	color: rgb(190, 255, 250);
+	/* color: rgb(190, 255, 250); */
 	line-height: 2;
 	list-style: none;
 }
@@ -231,6 +232,8 @@ li ul{
   /* --arss-red: #ff0064; */
   --aa-cyan: #A5FFFF;
 	--aa-nav: #003376;
+	--aa-db: #020039;
+	--aa-lime: #a0f42b;
 	--nav-white: rgba(255, 255, 255, 0.709);
   --nav-cyan: #00fbff;
   --bright-blue: rgb(22, 73, 255);
@@ -248,7 +251,7 @@ navblue: rgb(22, 73, 255) */
 
 
 .aa-cyan{
-  background: var(---aa-cyan);
+  background: var(--aa-cyan);
 }
 
 
@@ -261,6 +264,12 @@ navblue: rgb(22, 73, 255) */
 
 .aa-nav:hover{
   color: var(--nav-cyan);
+}
+
+
+
+.bg-aalime{
+  background: var(--aa-lime);
 }
 
 
@@ -289,7 +298,7 @@ navblue: rgb(22, 73, 255) */
 
 html, body{
   font-family: 'Inconsolata', monospace;
-	background-color: #061633;
+	background-color: var(--aa-db);
 	/* color: $roy; */
   /*box-sizing: border-box;*/
   /*background-color: purple;*/
@@ -498,7 +507,7 @@ h2 {
 .container p {
       line-height: 1.9rem;
       font-size: 1rem;
-      color: lightgray;
+      /* color: lightest-blue; */
     }
 
 
