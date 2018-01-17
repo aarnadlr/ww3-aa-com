@@ -707,6 +707,7 @@ h2 {
 
 .text__title {
       font-size: 1.4rem;
+      line-height: 1.8rem;
       color: blue;
       padding-bottom: 20px;
     }
