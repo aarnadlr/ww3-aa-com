@@ -246,7 +246,6 @@ h1 {
   /*font-smooth: always;*/
   /*-webkit-text-stroke: 0px!important;*/
   /*text-rendering: optimizeLegibility !important;*/
-  
 }
 
 
@@ -297,6 +296,13 @@ navblue: rgb(22, 73, 255) */
 
 .bg-aalime{
   background: var(--aa-lime);
+}
+
+
+
+.dark{
+  -webkit-filter: brightness(95%);
+  filter: brightness(95%);
 }
 
 
