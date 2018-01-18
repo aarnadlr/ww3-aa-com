@@ -16,10 +16,10 @@
 }
 
 h1 {
-  color: red;
+  /* color: red; */
   font-size: 2rem;
   font-family: 'Poppins', sans-serif;
-  /* font-weight: 900; */
+  font-weight: 700;
   /* font-family: 'GTWalsheim', sans-serif; */
 }
 
@@ -363,6 +363,7 @@ h2 {
     .copy {
 			margin-top: 8px;
 			margin-bottom: 30px;
+      line-height: 1.8rem;
     }
 
     p {
