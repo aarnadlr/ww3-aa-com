@@ -366,11 +366,18 @@ h2 {
       line-height: 1.8rem;
     }
 
+    /* STYLES FOR THE TAGS */
     p {
       line-height: 1.5rem;
       font-size: 1rem;
       color: gray;
     }
+  }
+  
+.coreskills-box__core-col{
+  p{
+      line-height: 1.8rem;
+  }
 }
 
 .text {

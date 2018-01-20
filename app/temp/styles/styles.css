@@ -692,7 +692,7 @@ h2 {
     background-color: white;
     padding: 40px;
     height: auto;
-}
+  }
 
 
 
@@ -704,11 +704,21 @@ h2 {
 
 
 
+/* STYLES FOR THE TAGS */
+
+
+
 .card-bottom p {
       line-height: 1.5rem;
       font-size: 1rem;
       color: gray;
     }
+
+
+
+.coreskills-box__core-col p{
+      line-height: 1.8rem;
+  }
 
 
 
